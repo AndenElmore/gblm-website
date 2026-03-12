@@ -76,6 +76,10 @@ export default function Contact() {
 
     return (
       <form id="contact-form" data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit} suppressHydrationWarning>
+        <div className="md:hidden bg-[#2e5c33] text-white p-5 rounded-lg mb-6 shadow-md text-center">
+          <h3 className="font-bold text-xl mb-1">Get an Estimate</h3>
+          <p className="text-sm opacity-90">Fill out your details below and we will contact you directly to discuss your project.</p>
+        </div>
         <input type="hidden" name="form-name" value="contact" />
         <div className="form-group">
           <label htmlFor="ghl-name">Full Name</label>
@@ -113,7 +117,9 @@ export default function Contact() {
           <label htmlFor="ghl-notes">Project Notes</label>
           <textarea id="ghl-notes" name="notes" className="form-control" rows={4} placeholder="Tell us about your project..." suppressHydrationWarning></textarea>
         </div>
-        <button type="submit" className="btn w-full">Submit Request</button>
+        <button type="submit" className="btn w-full mt-2 py-4 text-[1.05rem] shadow-lg flex items-center justify-center gap-2">
+          Submit Request <i className="fa-solid fa-paper-plane"></i>
+        </button>
       </form>
     );
   };
@@ -127,8 +133,20 @@ export default function Contact() {
               <h2>Get Your Free Quote</h2>
               <p>Ready to start your next project? Fill out the form below, and we'll get back to you with a professional estimate tailored to your land.</p>
               <div className="contact-info mt-10">
-                <p><i className="fa-solid fa-phone"></i> <strong>Call or Text:</strong><br /><a href="tel:+17065103942">(706) 510-3942</a></p>
-                <p><i className="fa-solid fa-envelope"></i> <strong>Email:</strong><br /><a href="mailto:groundbreakerlandmanagement@gmail.com">groundbreakerlandmanagement@gmail.com</a></p>
+                <p className="flex items-start gap-3">
+                  <i className="fa-solid fa-phone mt-1 text-[var(--accent-gold)]"></i> 
+                  <span className="flex-1">
+                    <strong className="block mb-1">Call or Text:</strong>
+                    <a href="tel:+17065103942" className="text-gray-600 hover:text-[var(--primary-green)]">(706) 510-3942</a>
+                  </span>
+                </p>
+                <p className="flex items-start gap-3 mt-4">
+                  <i className="fa-solid fa-envelope mt-1 text-[var(--accent-gold)]"></i> 
+                  <span className="flex-1 break-words">
+                    <strong className="block mb-1">Email:</strong>
+                    <a href="mailto:groundbreakerlandmanagement@gmail.com" className="text-gray-600 hover:text-[var(--primary-green)] break-all lg:break-words">groundbreakerlandmanagement@gmail.com</a>
+                  </span>
+                </p>
               </div>
             </div>
 

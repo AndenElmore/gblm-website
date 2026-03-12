@@ -11,7 +11,8 @@ This document tracks all modifications and improvements made to the GBLM Website
   - **Stability & Extension Support**: Implemented a mounting guard and hydration suppression for the contact form to eliminate console errors caused by browser extensions (NordPass, 1Password) injecting attributes into the DOM.
 - **Mobile-First Optimizations**:
   - **Image Orientation Normalization**: Re-processed high-resolution service images (specifically Clearing & Demolition) to strip conflicting iPhone EXIF metadata, ensuring they remain landscape on all mobile browsers.
-  - **Horizontal Bleed Prevention**: Implemented a global CSS "No-Bleed" reset (`overflow-x: hidden`) and modernized the viewport handling to prevent content from exceeding screen boundaries.
+  - **Horizontal Bleed Prevention**: Implemented a global CSS "No-Bleed" reset (`overflow-x: hidden`) and modernized the viewport handling to prevent content from exceeding screen boundaries. Fixed specific contact info overflow by forcing email address word-breaks.
+  - **Mobile Form UX Guidance**: Added a mobile-only "Get an Estimate" guidance header inside the contact form and optimized input padding for narrower screens.
   - **Video Compatibility Upgrade**: Added `video/quicktime` support and `preload="metadata"` settings to the Hero carousel to improve loading performance and reliability for `.mov` files on iOS and Android.
 - **UX & Visual Polish**:
   - **Subtle Auto-Scroll**: Enabled `scroll-behavior: smooth` site-wide, providing a premium feel when users click internal navigation links (About, Services, Contact).

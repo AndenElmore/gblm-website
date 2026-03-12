@@ -657,7 +657,11 @@ select.form-control {
 @media (max-width: 900px) {
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
+    }
+
+    .quote-form {
+        padding: 25px 20px;
     }
 
     .hero h1 {
@@ -763,8 +767,12 @@ footer {
 .contact-info p {
     margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
+}
+
+.contact-info p a {
+    word-break: break-all;
 }
 
 .contact-info i {
