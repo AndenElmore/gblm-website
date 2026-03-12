@@ -9,6 +9,10 @@ This document tracks all modifications and improvements made to the GBLM Website
   - **GoHighLevel (GHL) API Capture**: Implemented server-side lead injection to GoHighLevel. Created a secure API route (`/api/ghl`) that uses high-security environment variables (PIT and Location ID) to create new contacts upon form submission.
   - **Enhanced Contact Form**: Added a validated Email field to the contact form to ensure higher lead quality and match-rates within the CRM.
   - **Stability & Extension Support**: Implemented a mounting guard and hydration suppression for the contact form to eliminate console errors caused by browser extensions (NordPass, 1Password) injecting attributes into the DOM.
+- **Mobile-First Optimizations**:
+  - **Image Orientation Normalization**: Re-processed high-resolution service images (specifically Clearing & Demolition) to strip conflicting iPhone EXIF metadata, ensuring they remain landscape on all mobile browsers.
+  - **Horizontal Bleed Prevention**: Implemented a global CSS "No-Bleed" reset (`overflow-x: hidden`) and modernized the viewport handling to prevent content from exceeding screen boundaries.
+  - **Video Compatibility Upgrade**: Added `video/quicktime` support and `preload="metadata"` settings to the Hero carousel to improve loading performance and reliability for `.mov` files on iOS and Android.
 - **UX & Visual Polish**:
   - **Subtle Auto-Scroll**: Enabled `scroll-behavior: smooth` site-wide, providing a premium feel when users click internal navigation links (About, Services, Contact).
   - **Service Image Swaps**: Realigned the services grid based on specific visual feedback. "Grading & Site Prep" now uses the high-quality field photo (`IMG_0026.JPG`), and "Driveways & Roads" uses the maintenance action shot (`IMG_0019.JPG`).
@@ -33,13 +37,13 @@ This document tracks all modifications and improvements made to the GBLM Website
   - **Project Gallery**: Built `<ProjectGallery />` using `next/image` for a high-performance grid of completed work.
   - **Objection Handling**: Added an interactive `<FAQ />` component (accordion style) to address common customer concerns regarding estimates, service areas, and insurance.
 
-### March 8, 2026
+### March 8-9, 2026
 - **UX & Logic Fixes**:
   - **Media Rotation Logic**: Optimized the `Hero` section to only load and autoplay visible videos, significantly saving data for mobile users.
   - **Contact Routing**: Upgraded all contact text to actionable `mailto:`, `tel:`, and `sms:` links.
   - **Success States**: Implemented a "Success Loop" for the contact form, providing immediate visual feedback (thank you message) upon submission.
 
-### March 4, 2026
+### March 4-7, 2026
 - **Next.js Foundation & Asset Migration**:
   - **Project Scaffold**: Successfully migrated the legacy HTML codebase to a modern Next.js 15 project (App Router, Tailwind CSS, TypeScript).
   - **Component Architecture**: Modularized the monolithic HTML into reusable React components (`Header`, `Hero`, `Services`, `About`, `Contact`, `Footer`).

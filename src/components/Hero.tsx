@@ -30,8 +30,9 @@ export default function Hero() {
           return (
             <div key={index} className={`slide ${currentSlide === index ? "active" : ""}`}>
               {isVisibleOrNext && (
-                <video autoPlay muted loop playsInline>
+                <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover">
                   <source src={src} type="video/mp4" />
+                  <source src={src} type="video/quicktime" />
                 </video>
               )}
             </div>
