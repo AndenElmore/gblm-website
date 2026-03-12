@@ -13,7 +13,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
           <div className="service-card">
             <div className="service-card-bg relative overflow-hidden">
               <Image 
-                src="/images/service-clearing-final.jpg" 
+                src="/images/service-clearing-upright.jpg" 
                 alt="Clearing & Demolition" 
                 fill 
                 className="object-cover transition-transform duration-500 hover:scale-105"
@@ -104,7 +104,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
           <div className="service-card">
             <div className="service-card-bg relative overflow-hidden">
               <Image 
-                src="/images/service-bush-hogging-final.jpg" 
+                src="/images/service-bush-hogging-upright.jpg" 
                 alt="Bush Hogging & Field Reclaiming" 
                 fill 
                 className="object-cover transition-transform duration-500 hover:scale-105"
