@@ -4,6 +4,10 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### March 12, 2026
+- **Cross-Device Image Consistency**:
+  - **Hard-Coded Rotation**: Physically rotated the raw pixel data of tall iPhone service images (`service-clearing-hq.jpg` and `service-bush-hogging-hq.jpg`) by 90-degrees completely stripping EXIF orientation metadata to ensure pictures are natively landscape and perfectly upright on all devices and screen sizes.
+
 ### March 11, 2026
 - **CRM Integration & Functionality**:
   - **GoHighLevel (GHL) API Capture**: Implemented server-side lead injection to GoHighLevel. Created a secure API route (`/api/ghl`) that uses high-security environment variables (PIT and Location ID) to create new contacts upon form submission.
