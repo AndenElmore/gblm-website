@@ -6,7 +6,7 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ### March 12, 2026
 - **Cross-Device Image Consistency**:
-  - **Hard-Coded Rotation & Cache Busting**: Diagnosed a cross-device desynchronization where desktop and mobile read EXIF properties differently despite previous fixes. Solved this by extracting the raw pixels from the original landscape photos, permanently deleting all EXIF rotation tags, and serving them under brand new cache-busting filenames (`service-clearing-final.jpg`, `service-bush-hogging-final.jpg`) to force all devices to download the true, identical image.
+  - **True Pixel Rotation & Cache Busting**: Diagnosed a cross-device desynchronization where desktop and mobile rendered physical pixel data and EXIF properties differently. Overcame this by using an image manipulation script (`PIL.ImageOps.exif_transpose`) to physically read the original EXIF rotation and apply it structurally to the raw tracking pixels. Resaved the permanently upright images without any invisible Apple EXIF metadata under new cache-busting filenames (`service-clearing-upright.jpg`, `service-bush-hogging-upright.jpg`) to command all devices to download the unified, landscape image naturally.
 
 ### March 11, 2026
 - **CRM Integration & Functionality**:
