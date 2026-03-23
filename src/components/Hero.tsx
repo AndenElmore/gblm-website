@@ -1,36 +1,50 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function Hero() {
-  const [scrollY, setScrollY] = useState(0);
+  const textRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let animationFrameId: number;
+
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      // Cancel pending frame to prevent stacking
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+      
+      animationFrameId = requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+
+        // Apply styles directly to the DOM to bypass React's render cycle.
+        // This eliminates all jitter caused by state updates syncing with scroll events.
+        if (textRef.current) {
+          const textProgress = Math.min(scrollY / 400, 1);
+          textRef.current.style.opacity = `${1 - textProgress * 1.5}`;
+          textRef.current.style.transform = `scale(${1 - textProgress * 0.1}) translateY(${-textProgress * 80}px)`;
+          // Notice we removed the CSS transition: it fights JS for control.
+        }
+
+        if (logoRef.current) {
+          const logoProgress = Math.min(scrollY / 1300, 1);
+          logoRef.current.style.opacity = `${1 - logoProgress * 0.8}`;
+          logoRef.current.style.transform = `scale(${1 - logoProgress * 0.15}) translateY(${-logoProgress * 180}px)`;
+        }
+      });
     };
     
+    // Use passive listener for better scroll performance on mobile
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    
+    // Call once to ensure initial state is correct and styles are applied
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
   }, []);
-
-  // Staggered swipe effect: Words disappear first, Logo remains much longer
-  // Logo threshold increased to 1500px for maximum brand exposure
-  const textProgress = Math.min(scrollY / 400, 1);
-  const logoProgress = Math.min(scrollY / 1300, 1);
-  
-  const textSwipeStyle = {
-    opacity: 1 - textProgress * 1.5,
-    transform: `scale(${1 - textProgress * 0.1}) translateY(${-textProgress * 80}px)`,
-    transition: 'transform 0.1s ease-out, opacity 0.1s ease-out'
-  };
-
-  const logoSwipeStyle = {
-    opacity: 1 - logoProgress * 0.8, // Fades very slowly (still 20% visible at the end)
-    transform: `scale(${1 - logoProgress * 0.15}) translateY(${-logoProgress * 180}px)`, // Dramatic upward swipe
-    transition: 'transform 0.15s ease-out, opacity 0.15s ease-out'
-  };
 
   const headline = "Full-Service Land Management & Site Prep in Oconee County";
   const words = headline.split(" ");
@@ -40,7 +54,7 @@ export default function Hero() {
       <div className="container flex flex-col md:flex-row items-center justify-between py-12 md:py-24 gap-12">
         <div 
           className="w-full md:w-1/2"
-          style={scrollY > 0 ? textSwipeStyle : {}}
+          ref={textRef}
         >
           <div className="content-box !text-left !border-l-8 !border-t-0">
             <h1 className="hero-h1">
@@ -64,7 +78,7 @@ export default function Hero() {
         
         <div 
           className="w-full md:w-1/2 flex justify-center items-center"
-          style={scrollY > 0 ? logoSwipeStyle : {}}
+          ref={logoRef}
         >
           <div className="relative w-full max-w-[500px] aspect-square">
             <Image 

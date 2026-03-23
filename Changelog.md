@@ -13,6 +13,7 @@ This document tracks all modifications and improvements made to the GBLM Website
   - **Extended Logo Exposure**: Pushed the logo's scroll threshold to **1300px** so it remains visible almost 3x longer than the main headline text. This eliminates the "dead green" gap between sections.
   - **Dramatic 'Swipe Away' Motion**: Changed the logo's fade-out into a more pronounced upward swipe (`-180px`). The logo now feels like it’s being physically swiped off-screen rather than dissolving, with transparency only reducing gradually.
   - **Sequential Word Highlight**: Replaced the general headline glow with a precise "traveling gold" effect. Words highlight one-by-one in sequence.
+  - **Performance Fix (Scroll Jitter)**: Refactored the iPhone swipe logic to map directly to the DOM using `requestAnimationFrame`, bypassing React state entirely. This ensures 60fps native scroll performance perfectly synced with the user's thumb movement.
 - **Services Section Redesign**:
   - Replaced the hover-to-reveal interaction with a permanent "Green Box" layout.
   - Each service now features a stacked image and content block that is always visible for better accessibility and user engagement.
