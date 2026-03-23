@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import VideoSection from "@/components/VideoSection";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Reviews from "@/components/Reviews";
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <VideoSection />
         <Services />
         <About />
         {/* <Reviews /> */}

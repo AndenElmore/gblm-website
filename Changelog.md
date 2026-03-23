@@ -5,6 +5,25 @@ This document tracks all modifications and improvements made to the GBLM Website
 ---
 
 ### March 22, 2026
+- **Social Media Integration**:
+  - Added Facebook and Instagram icons to the **Header Top Bar** and the **Footer** for better social connectivity.
+  - Linked the Facebook profile: `https://www.facebook.com/profile.php?id=61584159944480`.
+  - Icons are styled to match the brand identity using gold accents with hover transitions.
+- **Services Section Redesign**:
+  - Replaced the hover-to-reveal interaction with a permanent "Green Box" layout.
+  - Each service now features a stacked image and content block that is always visible for better accessibility and user engagement.
+- **Hero & Video Layout Restructure (Split-Screen Design)**:
+  - Transitioned the Hero section to a **split-screen layout** (Text on Left / Logo on Right).
+  - The content box now uses a left-accented gold border, while the optimized GBLM logo (`logo-web.png`) occupies the right half of the screen on desktop.
+  - Maintained the dedicated `VideoSection` below the hero for project showcases.
+  - Responsive logic ensures a clean vertical stack for mobile users.
+  - **🔂 REVERSAL PROTOCOL**: To return to the previous "Background Video" look:
+    1. In `src/app/page.tsx`, remove the `<VideoSection />` component and its import.
+    2. In `src/components/Hero.tsx`, change the parent `<section>` class from `hero-v2` back to `hero`.
+    3. Re-insert the `<video>` block inside a `div` with class `hero-slider` and `slide active` (Refer to git commit `a03da98` for exact JSX structure).
+    4. Ensure `.hero-overlay` is restored for text legibility.
+
+### March 22, 2026 (Earlier Updates)
 - **Hero Section Optimization**:
   - Simplified the Hero background to use a single, hand-edited looping video (`David_Hero_Main.mp4`).
   - Removed the multi-video slider logic to reduce bandwidth consumption and simplify the codebase.

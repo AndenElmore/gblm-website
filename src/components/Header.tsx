@@ -9,10 +9,20 @@ export default function Header() {
   return (
     <>
       <div className="top-bar">
-        <div className="container">
-          <span><i className="fa-solid fa-phone"></i> <a href="tel:+17065103942">(706) 510-3942</a></span>
-          <span><i className="fa-solid fa-envelope"></i> <a href="mailto:groundbreakerlandmanagement@gmail.com">groundbreakerlandmanagement@gmail.com</a></span>
-          <span><i className="fa-solid fa-location-dot"></i> Oconee County, GA</span>
+        <div className="container flex justify-between items-center text-sm">
+          <div className="flex gap-6">
+            <span><i className="fa-solid fa-phone"></i> <a href="tel:+17065103942">(706) 510-3942</a></span>
+            <span><i className="fa-solid fa-envelope"></i> <a href="mailto:groundbreakerlandmanagement@gmail.com">groundbreakerlandmanagement@gmail.com</a></span>
+            <span className="hidden md:flex"><i className="fa-solid fa-location-dot"></i> Oconee County, GA</span>
+          </div>
+          <div className="flex gap-4 ml-6 items-center">
+            <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <i className="fa-brands fa-facebook text-lg text-[var(--accent-gold)]"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <i className="fa-brands fa-instagram text-lg text-[var(--accent-gold)]"></i>
+            </a>
+          </div>
         </div>
       </div>
 

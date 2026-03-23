@@ -8,6 +8,14 @@ export default function Footer() {
           <div className="footer-col flex-2">
             <h4>Ground Breaker Land Management</h4>
             <p className="max-w-[300px]">Providing top-quality land management services. No job is too big or too small for our team.</p>
+            <div className="flex gap-5 mt-6">
+              <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                <i className="fa-brands fa-facebook text-2xl text-[var(--accent-gold)]"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                <i className="fa-brands fa-instagram text-2xl text-[var(--accent-gold)]"></i>
+              </a>
+            </div>
           </div>
           <div className="footer-col contact-info">
             <h4>Contact Us</h4>
