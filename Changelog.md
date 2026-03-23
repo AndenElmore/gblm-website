@@ -4,6 +4,11 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### March 22, 2026
+- **Hero Section Optimization**:
+  - Simplified the Hero background to use a single, hand-edited looping video (`David_Hero_Main.mp4`).
+  - Removed the multi-video slider logic to reduce bandwidth consumption and simplify the codebase.
+
 ### March 12, 2026
 - **Cross-Device Image Consistency**:
   - **True Pixel Rotation & Cache Busting**: Diagnosed a cross-device desynchronization where desktop and mobile rendered physical pixel data and EXIF properties differently. Overcame this by using an image manipulation script (`PIL.ImageOps.exif_transpose`) to physically read the original EXIF rotation and apply it structurally to the raw tracking pixels. Resaved the permanently upright images without any invisible Apple EXIF metadata under new cache-busting filenames (`service-clearing-upright.jpg`, `service-bush-hogging-upright.jpg`) to command all devices to download the unified, landscape image naturally.
