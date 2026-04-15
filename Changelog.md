@@ -4,6 +4,14 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### April 15, 2026
+- **Before & After Showcase Finalization**:
+  - Successfully converted 8 HEIC images to web-compatible JPEG format via `sips` for cross-browser support.
+  - Implemented a fully automated, synchronized carousel that simultaneously transitions "Before" and "After" views.
+  - Added "Current Featured Project" dynamic badging with custom typography.
+  - Enhanced mobile ergonomics with touch-friendly navigation dots and smooth 5-second auto-transitions.
+  - **🔂 REVERSAL PROTOCOL**: To remove the section, simply delete the `<BeforeAfter />` import and component call in `src/app/page.tsx` and delete `src/components/BeforeAfter.tsx`.
+
 ### March 22, 2026
 - **Social Media Integration**:
   - Added Facebook and Instagram icons to the **Header Top Bar** and the **Footer** for better social connectivity.

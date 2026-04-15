@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import VideoSection from "@/components/VideoSection";
 import Services from "@/components/Services";
+import BeforeAfter from "@/components/BeforeAfter";
 import About from "@/components/About";
 import Reviews from "@/components/Reviews";
 import ProjectGallery from "@/components/ProjectGallery";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <VideoSection />
         <Services />
+        <BeforeAfter />
         <About />
         {/* <Reviews /> */}
         {/* <ProjectGallery /> */}
