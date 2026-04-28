@@ -4,6 +4,16 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### April 28, 2026
+- **Promotional & Financing Banner**:
+  - Added a global, infinite-scrolling marquee to the absolute top of the site (above the top-bar) to notify visitors that financing options are available.
+  - Implemented custom CSS animation (`marquee`) in `globals.css` to handle the smooth infinite scroll without JavaScript overhead.
+  - **🔂 REVERSAL PROTOCOL**: To remove the marquee, simply delete the `<div className="marquee-container">...</div>` block from the top of `src/components/Header.tsx` and optionally remove the `.marquee-container` CSS from `globals.css`.
+- **Services Section Refinements**:
+  - Upgraded the plain text financing message into a highly styled, premium "Financing Banner" directly beneath the "Our Services" section header. 
+  - The banner utilizes a gradient blur backdrop, an icon, and a direct Call to Action ("Get Details") to encourage conversions.
+  - **🔂 REVERSAL PROTOCOL**: To revert to the standard layout, delete the `<div className="max-w-4xl mx-auto mb-14 relative group">...</div>` wrapper from the `section-header` in `src/components/Services.tsx`.
+
 ### April 15, 2026
 - **Before & After Showcase Finalization**:
   - Successfully converted 8 HEIC images to web-compatible JPEG format via `sips` for cross-browser support.

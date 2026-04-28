@@ -8,6 +8,27 @@ export default function Header() {
 
   return (
     <>
+      <div className="marquee-container">
+        <div className="marquee-content">
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+          Financing is an option! Ask us about flexible payment plans for your next project. 🚜
+          <span>•</span>
+        </div>
+      </div>
+
       <div className="top-bar">
         <div className="container flex justify-between items-center text-sm">
           <div className="flex gap-6">

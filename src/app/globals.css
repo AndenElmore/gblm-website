@@ -957,3 +957,34 @@ footer {
     transition: all 0.5s ease;
     animation: word-highlight 6s infinite;
 }
+
+/* --- FINANCING MARQUEE --- */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: var(--accent-gold);
+    color: #000;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1001;
+    display: flex;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.marquee-content span {
+    margin: 0 40px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

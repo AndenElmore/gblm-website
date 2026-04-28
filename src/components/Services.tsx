@@ -7,6 +7,27 @@ export default function Services({ title = "Our Services" }: { title?: string })
         <div className="section-header">
           <h2>{title}</h2>
         </div>
+          
+        <div className="max-w-4xl mx-auto relative group" style={{ marginTop: "60px", marginBottom: "100px" }}>
+          <div className="absolute -inset-1 bg-gradient-to-r from-[var(--primary-green)] to-[var(--accent-gold)] rounded-2xl blur opacity-20 transition duration-500 group-hover:opacity-40"></div>
+          <div className="relative bg-white rounded-xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 border border-gray-100">
+            <div className="shrink-0 bg-yellow-50 w-16 h-16 rounded-full flex items-center justify-center border border-yellow-100">
+              <i className="fa-solid fa-file-invoice-dollar text-2xl text-[var(--accent-gold)]"></i>
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 font-['Montserrat']">Need Financing? We've Got You Covered.</h3>
+              <p className="text-gray-600">
+                Land management is a major investment. We offer flexible, stress-free payment plans so you can start your clearing, grading, or forestry project today without the financial wait.
+              </p>
+            </div>
+            <div className="shrink-0 mt-4 md:mt-0">
+              <a href="#contact" className="btn inline-flex items-center gap-2">
+                <span>Get Details</span>
+                <i className="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div className="services-grid">
           {/* Service 1: Clearing & Demolition */}
