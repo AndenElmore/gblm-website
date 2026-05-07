@@ -4,6 +4,24 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### May 7, 2026
+- **Project Documentation Restructure**:
+  - Split `Roadmap.md` into two separate files with distinct purposes: `Roadmap.md` (Telegram notes log, written by automation) and `Development_Roadmap.md` (developer execution file, used by AI and developer to plan and build).
+  - Updated `AI_Rules.md` with a file role table and a 5-step triage workflow so any AI agent entering this project knows exactly how to handle both files.
+  - All original phase content (A, B, C, Ideas Bucket) moved to `Development_Roadmap.md`. David's May 7 requests added there as actionable `[ ]` items.
+  - **🔂 REVERSAL PROTOCOL**: To revert, copy all phase content from `Development_Roadmap.md` back into `Roadmap.md` and delete `Development_Roadmap.md`.
+
+- **n8n: GBLM Website Updates Workflow — Telegram Bot Fixes** (`HcIoYILkNCd1PTLF`):
+  - **Bug fixed: Bot was re-acknowledging old messages on every 4-hour run.** Root cause: n8n's `$getWorkflowStaticData` was not persisting between manual executions and after API workflow pushes, causing `lastUpdateId` and `lastAckedUpdateId` to reset to 0. This made the bot treat already-seen messages as new on every run.
+  - **Fix: Telegram offset confirmation.** Added two new nodes — `Confirm Ack Offset` (after acknowledgment branch) and `Confirm Roadmap Offset` (after roadmap branch). Each calls Telegram's `getUpdates` API with the high-water-mark `offset+1`, which permanently tells Telegram to forget those updates. Even if n8n static data resets, Telegram will not return already-confirmed messages.
+  - **Fix: `is_bot` filter added** to `Filter & Queue` node. Bot messages (this bot or any other in the chat) are now explicitly excluded from triggering acknowledgments.
+  - **Fix: `lastUpdateId` always saved** even on runs with no new matching messages, preventing offset drift.
+  - **Manual cleanup:** Confirmed all 10 previously-stuck Telegram updates (up to update_id 535709740) directly via the Telegram API so the bot starts fresh.
+  - **n8n AI prompt updated** in `Decode & Prepare` node: bot now writes entries to `Roadmap.md` in clean `[YYYY-MM-DD] Sender: Summary` format under a "Pending Review" section, instead of scattering items into development phases.
+  - **n8n API key and MCP limitation documented** in `~/.claude/CLAUDE.md` and project memory so future AI agents know to use the REST API for workflow edits.
+
+---
+
 ### April 28, 2026
 - **Promotional & Financing Banner**:
   - Added a global, infinite-scrolling marquee to the absolute top of the site (above the top-bar) to notify visitors that financing options are available.

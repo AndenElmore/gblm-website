@@ -6,6 +6,12 @@ import Image from "next/image";
 export default function BeforeAfter() {
   const examples = [
     {
+      id: 5,
+      title: "Bushhogging Fields & Pastures",
+      before: "/images/bushhogging-before.jpg",
+      after: "/images/bushhogging-after.jpg",
+    },
+    {
       id: 1,
       title: "Land Clearing & Reclamation",
       before: "/images/Scene_1before.jpg",

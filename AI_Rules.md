@@ -13,12 +13,34 @@ These rules are the "universal law" for all AI agents interacting with this code
 ---
 
 ## 2. 📝 Documentation Standards
+
+### File Roles — Know These Before You Touch Anything
+
+| File | Purpose | Who writes it | Who reads it |
+|---|---|---|---|
+| `Roadmap.md` | Raw Telegram message log. Auto-written by n8n bot when David or Anden posts in the project chat. | n8n automation only | Developer/AI to triage |
+| `Development_Roadmap.md` | The authoritative developer task list. All phases, steps, and client requests live here once triaged. | Developer / AI agent | Developer/AI to execute |
+| `Changelog.md` | Record of every completed change. | Developer / AI agent | Anyone reviewing history |
+| `AI_Rules.md` | This file. Universal rules for all AI agents on this project. | Developer | All AI agents |
+
+### The Triage Workflow (do this at the start of every session)
+1. `git pull` to get the latest files from GitHub.
+2. Open `Roadmap.md` — look at the **Pending Review** section for any new logged messages from David or Anden.
+3. Read each item and decide: is it actionable? Does it belong in an existing phase?
+4. Add actionable items to the correct phase in `Development_Roadmap.md` as `[ ]` items.
+5. Move the triaged items in `Roadmap.md` from "Pending Review" to the "Archive" section.
+6. Execute work exclusively from `Development_Roadmap.md`.
+
+### Do Not:
+- Edit `Roadmap.md` structure — the n8n bot writes to it and expects a specific format.
+- Execute changes directly from `Roadmap.md` — always triage to `Development_Roadmap.md` first.
+- Skip updating `Changelog.md` after any change.
+
 1.  **The Changelog is Sacred**: Every change—no matter how small—must be documented in `Changelog.md`.
     -   Include the **Date**.
     -   Group by **Category** (e.g., Hero Section, Services, SEO, Bug Fixes).
     -   Provide a **Reversal Protocol** for major UI changes so the developer or a future AI can revert the look perfectly if needed.
-2.  **The Roadmap is the Brain**: Use `Roadmap.md` to brainstorm new features, map out multi-step execution plans, and track "In Progress" vs. "Completed" work.
-3.  **Technical Walkthroughs**: For complex logic changes (like the `requestAnimationFrame` scroll fix), create a walkthrough artifact or a `.md` file in the documentation folder explaining the "Why" and "How."
+2.  **Technical Walkthroughs**: For complex logic changes (like the `requestAnimationFrame` scroll fix), create a walkthrough artifact or a `.md` file in the documentation folder explaining the "Why" and "How."
 
 ---
 

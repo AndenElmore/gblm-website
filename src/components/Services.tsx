@@ -17,7 +17,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 font-['Montserrat']">Need Financing? We've Got You Covered.</h3>
               <p className="text-gray-600">
-                Land management is a major investment. We offer flexible, stress-free payment plans so you can start your clearing, grading, or forestry project today without the financial wait.
+                Land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!
               </p>
             </div>
             <div className="shrink-0 mt-4 md:mt-0">
@@ -102,23 +102,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
             </div>
           </div>
 
-          {/* Service 5: Bush Hogging */}
-          <div className="service-card">
-            <div className="service-image-container">
-              <Image 
-                src="/images/service-bush-hogging-upright.jpg" 
-                alt="Bush Hogging & Field Reclaiming" 
-                fill 
-                className="object-cover"
-              />
-            </div>
-            <div className="service-text-content">
-              <i className="fa-solid fa-wheat-awn"></i>
-              <h3>Bush Hogging</h3>
-              <p>Heavy-duty clearing for thick brush, tall grass, and saplings. We help you reclaim overgrown fields and pastures, restoring your land to a clean and manageable state.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
-            </div>
-          </div>
+
 
           {/* Service 6: Tree & Storm Cleanup */}
           <div className="service-card">
@@ -152,6 +136,42 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-gear"></i>
               <h3>Stump Grinding</h3>
               <p>Complete removal of unsightly stumps to clear the way for new landscaping or safe mowing transitions.</p>
+              <a href="#contact" className="btn btn-small">Book Now</a>
+            </div>
+          </div>
+
+          {/* Service 8: Spraying Weed Control & Fertilizer */}
+          <div className="service-card">
+            <div className="service-image-container">
+              <Image 
+                src="/images/weed control.png" 
+                alt="Spraying Weed Control & Fertilizer" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            <div className="service-text-content">
+              <i className="fa-solid fa-leaf"></i>
+              <h3>Spraying Weed Control</h3>
+              <p>Professional spraying services to eliminate invasive weeds and fertilize your land for optimal growth and health.</p>
+              <a href="#contact" className="btn btn-small">Book Now</a>
+            </div>
+          </div>
+
+          {/* Service 9: Bushhogging Fields & Pastures */}
+          <div className="service-card">
+            <div className="service-image-container">
+              <Image 
+                src="/images/bushhogging-after.jpg" 
+                alt="Bushhogging Fields & Pastures" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            <div className="service-text-content">
+              <i className="fa-solid fa-tractor"></i>
+              <h3>Bushhogging Fields & Pastures</h3>
+              <p>Efficiently mow down tall grass, thick brush, and saplings to maintain and restore your fields and pastures.</p>
               <a href="#contact" className="btn btn-small">Book Now</a>
             </div>
           </div>

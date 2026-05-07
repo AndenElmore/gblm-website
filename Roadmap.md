@@ -1,61 +1,28 @@
-# 🛣️ GBLM Website Roadmap: Execution & Innovations
+# GBLM Telegram Notes Log
 
-This file is the **Brain** of the project where the developer (User) and the AI (Agent) brainstorm new features, map out implementation strategies, and track current progress. 
-
----
-
-## 🏗️ Phase A: Branding & Experience Refinement (In Progress)
-*Objective: Solidify the Hero, Services, and Navigation for a "World-Class" first impression.*
-
-- [x] **Step 1: The 'iPhone Swipe' Hero**: Implement staggered scroll-linked animations for the text and logo. (Completed March 23)
-- [x] **Step 2: Traveling Word Highlight**: Add sequential gold highlights to the h1 title for directed reading. (Completed March 23)
-- [x] **Step 3: Service Card Redesign**: Convert hover-reveal into permanent high-contrast "Green Box" cards. (Completed March 23)
-- [x] **Step 4: Social Icon Integration**: Added Facebook/Instagram to top-bar and footer. (Completed March 23)
-- [ ] **Step 5: Review Carousel**: Refine the transition and layout of the customer reviews for a more premium "testimony" feel.
-- [x] **Step 6: Before & After Showcase**: Implement a high-performance carousel to highlight property transformations. (Completed April 15)
-- [ ] **Update Services Section**: Edit blurb under "Our Services" to: “land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!” Add 2 new service cards: 1) Spraying weed control and fertilizer, 2) Bushhogging fields and pastures (provided).
-- [ ] **Update Project Showcase**: Edit video by deleting overhead shot of brush clearing (only straight overhead shot) and replacing with bush hogging field video. Incorporate before/after shots of the mowed field.
+> **What this file is:** A raw log of client and developer messages captured automatically from the GBLM project Telegram chat via n8n. This file is written to by the automation — do not manually restructure it.
+>
+> **What this file is NOT:** A developer roadmap. Do not execute work directly from this file.
+>
+> **Workflow:** Pull this file from GitHub → read the notes → move actionable items into `Development_Roadmap.md` under the correct phase → execute from there.
 
 ---
 
-## 📈 Phase B: Trust & Conversion (Next Priority)
-*Objective: Establish instant credibility to prevent bounces from ready-to-buy traffic.*
+## Pending Review
 
-- [ ] **Step 1: Social Proof Injection**: 
-    -   Add 3-5 real reviews with Name, Location, and 5-star icons.
-    -   Build a `ProjectGallery` component (raw land vs. cleared sites) using `next/image` lazy loading.
-- [ ] **Step 2: Objection Handling (FAQ)**:
-    -   Add an interactive `FAQ` accordion near the contact form.
-    -   Questions: "Do you offer free estimates?", "What areas do you serve?", "Are you insured?" (Emphasize **Fully Insured**).
+The following messages have been logged from Telegram and not yet triaged into the Development Roadmap.
+
+- [ ] [2026-05-07] David: Edit blurb under "Our Services" to say "land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!"
+- [ ] [2026-05-07] David: Create 2 new service fields — 1) Spraying weed control and fertilizer, 2) Bushhogging fields and pastures (photos provided in Telegram thread)
+- [ ] [2026-05-07] David: Edit video in project showcase — delete overhead shot of brush clearing (only the straight overhead shot). Replace with bushhogging field video. Use before/after shots of the mowed field.
 
 ---
 
-## 🔍 Phase C: Local SEO & "Answer Engine" Optimization 
-*Objective: Feed Google Business Profile and AI search engines exactly what they want.*
+## Clean ths file rules
 
-- [ ] **Step 1: JSON-LD Schema & Metadata Injection**:
-    -   Add Local Business schema to `layout.tsx`.
-    -   Synchronize official street address visually in the `<Footer />` for NAP (Name, Address, Phone) consistency.
-- [ ] **Step 2: Service Area Landing Pages**: 
-    -   Implement dynamic routes (`locations/[city]/page.tsx`) to generate town-specific landing pages for Bogart, Watkinsville, Athens, etc.
+*Once items above are moved into `Development_Roadmap.md`, take off pending review and leave open for new requests. The idea here is to keep this file light for the ai agent that is taking requests from the telegram chat and pushing those notes into this file
 
----
+*So after tasks are completed in the Development Roadmap md file and comitted to github the ai agent should clear out these pending review items in the Roadmap.md file. This way the agent will always have a clean and empty pending review section to drop new requests into.
 
-## 💡 Brainstorming & Ideas Bucket
-*Note: Drop ideas here before fully committing to the roadmap.*
+*The above rules apply to ai that is helping the developer coding inside the project. 
 
-- [ ] **Interactive Land Management Quote Tool**: A multi-step form that asks for acreage and service type to give a more tailored "Estimate Request" experience.
-- [ ] **Blog Foundation**: Prepare for inbound content marketing by setting up a `/blog` structure for land management guides.
-- [ ] **Glassmorphism Footer**: Update the footer to match the premium glass theme of the Hero.
-- [ ] [2026-05-07] test test teststttsst
-- [ ] [2026-05-07] test nahhh
-- [ ] [2026-05-07] test
-- [ ] [2026-05-07] hello, welcome to testing this is a test so no changes should be made
-
----
-
----
-
----
-
----
