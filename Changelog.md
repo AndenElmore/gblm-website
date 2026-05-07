@@ -20,6 +20,12 @@ This document tracks all modifications and improvements made to the GBLM Website
   - **n8n AI prompt updated** in `Decode & Prepare` node: bot now writes entries to `Roadmap.md` in clean `[YYYY-MM-DD] Sender: Summary` format under a "Pending Review" section, instead of scattering items into development phases.
   - **n8n API key and MCP limitation documented** in `~/.claude/CLAUDE.md` and project memory so future AI agents know to use the REST API for workflow edits.
 
+- **Services Section & Before/After Showcase Updates**:
+  - **Services Blurb**: Updated financing copy to "Land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!"
+  - **New Service Cards**: Added `Spraying Weed Control` and `Bushhogging Fields & Pastures` service cards using newly provided images. Removed the duplicate older Bush Hogging card.
+  - **Before & After Carousel**: Added the new Bushhogging fields before/after transformation photos as the primary (first) slide.
+  - **Roadmap Synchronization**: Successfully executed the new triage workflow by moving all 3 "Pending Review" items from `Roadmap.md` into `Development_Roadmap.md` and clearing the log for new incoming Telegram requests.
+
 ---
 
 ### April 28, 2026
