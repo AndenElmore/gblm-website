@@ -13,7 +13,7 @@ This file is the **Brain** of the project where the developer (User) and the AI 
 - [x] **Step 4: Social Icon Integration**: Added Facebook/Instagram to top-bar and footer. (Completed March 23)
 - [ ] **Step 5: Review Carousel**: Refine the transition and layout of the customer reviews for a more premium "testimony" feel.
 - [x] **Step 6: Before & After Showcase**: Implement a high-performance carousel to highlight property transformations. (Completed April 15)
-- [ ] **Update Services Section**: Edit blurb under "Our Services" to: “land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!” Add 2 new service cards: 1) Spraying weed control and fertilizer, 2) Bushhogging fields and pastures (use provided pictures).
+- [ ] **Update Services Section**: Edit blurb under "Our Services" to: “land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!” Add 2 new service cards: 1) Spraying weed control and fertilizer, 2) Bushhogging fields and pastures (provided).
 - [ ] **Update Project Showcase**: Edit video by deleting overhead shot of brush clearing (only straight overhead shot) and replacing with bush hogging field video. Incorporate before/after shots of the mowed field.
 
 ---
