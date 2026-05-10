@@ -4,6 +4,12 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### May 10, 2026
+- **Services Section Updates**:
+  - Added new **Lawn Rolling** service card.
+  - Re-routed image paths for **Seeding & Tilling** and updated the image for **Grading & Site Prep**.
+  - Adjusted the image framing (`object-top`) for the Grading & Site Prep photo to ensure the actual site, rather than just the foreground dirt, is visible.
+
 ### May 7, 2026
 - **Project Documentation Restructure**:
   - Split `Roadmap.md` into two separate files with distinct purposes: `Roadmap.md` (Telegram notes log, written by automation) and `Development_Roadmap.md` (developer execution file, used by AI and developer to plan and build).

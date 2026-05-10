@@ -12,12 +12,7 @@
 
 The following messages have been logged from Telegram and not yet triaged into the Development Roadmap.
 
-- [ ] [2026-05-07] David: Edit blurb under "Our Services" to say "land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!"
-- [ ] [2026-05-07] David: Create 2 new service fields — 1) Spraying weed control and fertilizer, 2) Bushhogging fields and pastures (photos provided in Telegram thread)
-- [ ] [2026-05-07] David: Edit video in project showcase — delete overhead shot of brush clearing (only the straight overhead shot). Replace with bushhogging field video. Use before/after shots of the mowed field.
-- [ ] [2026-05-07] David: Add video to project showcase and create new service for lawn rolling
-- [ ] [2026-05-07] David: Change picture for seeding and tilling to the picture currently on grading and site prep
-- [ ] [2026-05-07] David: Replace picture for grading and site prep with new provided picture
+
 
 ---
 

@@ -52,10 +52,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
           <div className="service-card">
             <div className="service-image-container">
               <Image 
-                src="/images/IMG_0026.JPG" 
+                src="/images/grading-site-prep-new.jpg" 
                 alt="Grading & Site Prep" 
                 fill 
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="service-text-content">
@@ -88,7 +88,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
           <div className="service-card">
             <div className="service-image-container">
               <Image 
-                src="/images/IMG_0012.JPG" 
+                src="/images/IMG_0026.JPG" 
                 alt="Seeding & Tilling" 
                 fill 
                 className="object-cover"
@@ -172,6 +172,24 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tractor"></i>
               <h3>Bushhogging Fields & Pastures</h3>
               <p>Efficiently mow down tall grass, thick brush, and saplings to maintain and restore your fields and pastures.</p>
+              <a href="#contact" className="btn btn-small">Book Now</a>
+            </div>
+          </div>
+
+          {/* Service 10: Lawn Rolling */}
+          <div className="service-card">
+            <div className="service-image-container">
+              <Image 
+                src="/images/lawn-rolling.jpg" 
+                alt="Lawn Rolling" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            <div className="service-text-content">
+              <i className="fa-solid fa-tractor"></i>
+              <h3>Lawn Rolling</h3>
+              <p>Smooth out uneven terrain, press down frost heave, and ensure optimal seed-to-soil contact for a flawless, level yard.</p>
               <a href="#contact" className="btn btn-small">Book Now</a>
             </div>
           </div>
