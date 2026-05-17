@@ -15,8 +15,6 @@ The following messages have been logged from Telegram and not yet triaged into t
 - [ ] [2026-05-10] Anden: Services Section Updates: added Lawn Rolling service card, re-routed image paths for Seeding & Tilling, updated image/framing for Grading & Site Prep; project showcase video still being manually edited.
 - [ ] [2026-05-10] David: Remove the Instagram app icon or figure out why it’s not working
 
-
-
 ---
 
 ## Clean ths file rules
@@ -25,8 +23,4 @@ The following messages have been logged from Telegram and not yet triaged into t
 
 *So after tasks are completed in the Development Roadmap md file and comitted to github the ai agent should clear out these pending review items in the Roadmap.md file. This way the agent will always have a clean and empty pending review section to drop new requests into.
 
-*The above rules apply to ai that is helping the developer coding inside the project. 
-
-
-
----
+*The above rules apply to ai that is helping the developer coding inside the project.
