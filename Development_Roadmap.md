@@ -26,6 +26,7 @@
 - [ ] **Project Showcase Video Update** *(from David, May 7)* — Delete the straight overhead shot of brush clearing from the project showcase video. Replace with bushhogging field footage. Incorporate before/after shots of the mowed field. *Also add new lawn rolling video to the project showcase.* **(Waiting on manual video edit from David)**
 - [x] **Lawn Rolling Service** *(from David, May 7)* — Create a new service card for lawn rolling. *(Completed May 10)*
 - [x] **Service Cards Image Updates** *(from David, May 7)* — Change picture for "Seeding & Tilling" to the picture currently used on "Grading & Site Prep". Replace picture for "Grading & Site Prep" with new provided picture. *(Completed May 10)*
+- [x] **Instagram Icon Investigation/Removal** *(from David, May 10)* — Investigate why the Instagram icon isn't working (currently links to `href="#"`) and either link it to their actual Instagram profile or remove it. *(Completed May 20)*
 
 ---
 

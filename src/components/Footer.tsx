@@ -12,9 +12,6 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
                 <i className="fa-brands fa-facebook text-2xl text-[var(--accent-gold)]"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <i className="fa-brands fa-instagram text-2xl text-[var(--accent-gold)]"></i>
-              </a>
             </div>
           </div>
           <div className="footer-col contact-info">

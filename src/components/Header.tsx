@@ -40,9 +40,6 @@ export default function Header() {
             <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               <i className="fa-brands fa-facebook text-lg text-[var(--accent-gold)]"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              <i className="fa-brands fa-instagram text-lg text-[var(--accent-gold)]"></i>
-            </a>
           </div>
         </div>
       </div>

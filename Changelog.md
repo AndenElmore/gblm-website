@@ -4,6 +4,23 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### May 20, 2026
+- **Social Media Links Update**:
+  - Removed the non-functional Instagram icon link (which was pointing to `href="#"`) from both the **Header Top Bar** and the **Footer** as requested.
+  - **🔂 REVERSAL PROTOCOL**: To restore the Instagram icon, add the following anchor elements back into the respective components:
+    - **Header** ([Header.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/Header.tsx#L39-L43)):
+      ```tsx
+      <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+        <i className="fa-brands fa-instagram text-lg text-[var(--accent-gold)]"></i>
+      </a>
+      ```
+    - **Footer** ([Footer.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/Footer.tsx#L11-L15)):
+      ```tsx
+      <a href="#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+        <i className="fa-brands fa-instagram text-2xl text-[var(--accent-gold)]"></i>
+      </a>
+      ```
+
 ### May 10, 2026
 - **Services Section Updates**:
   - Added new **Lawn Rolling** service card.

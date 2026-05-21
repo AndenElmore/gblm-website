@@ -12,8 +12,12 @@
 
 The following messages have been logged from Telegram and not yet triaged into the Development Roadmap.
 
-- [ ] [2026-05-10] Anden: Services Section Updates: added Lawn Rolling service card, re-routed image paths for Seeding & Tilling, updated image/framing for Grading & Site Prep; project showcase video still being manually edited.
-- [ ] [2026-05-10] David: Remove the Instagram app icon or figure out why it’s not working
+---
+
+## Archive
+
+- [x] [2026-05-10] Anden: Services Section Updates: added Lawn Rolling service card, re-routed image paths for Seeding & Tilling, updated image/framing for Grading & Site Prep; project showcase video still being manually edited. (Moved to Development_Roadmap.md)
+- [x] [2026-05-10] David: Remove the Instagram app icon or figure out why it’s not working (Moved to Development_Roadmap.md)
 
 ---
 
