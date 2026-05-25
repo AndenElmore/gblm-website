@@ -23,10 +23,12 @@
 - [ ] **Step 5: Review Carousel** — Refine transition and layout of customer reviews for a more premium "testimony" feel.
 - [x] **Step 6: Before & After Showcase** — High-performance carousel highlighting property transformations. *(Completed April 15)*
 - [x] **Services Section Update** *(from David, May 7)* — Edit the blurb under "Our Services" to: *"Land management is a major investment. We offer flexible, stress-free payment plans so you can start your property improvement today!"* Add 2 new service cards: (1) Spraying weed control and fertilizer, (2) Bushhogging fields and pastures — use photos David provided in Telegram.
-- [ ] **Project Showcase Video Update** *(from David, May 7)* — Delete the straight overhead shot of brush clearing from the project showcase video. Replace with bushhogging field footage. Incorporate before/after shots of the mowed field. *Also add new lawn rolling video to the project showcase.* **(Waiting on manual video edit from David)**
+- [x] **Project Showcase Video Update** *(from David, May 7)*. Delete the straight overhead shot of brush clearing from the project showcase video. Replace with bushhogging field footage. Incorporate before/after shots of the mowed field. *Also add new lawn rolling video to the project showcase.* *(Completed May 25)*
 - [x] **Lawn Rolling Service** *(from David, May 7)* — Create a new service card for lawn rolling. *(Completed May 10)*
 - [x] **Service Cards Image Updates** *(from David, May 7)* — Change picture for "Seeding & Tilling" to the picture currently used on "Grading & Site Prep". Replace picture for "Grading & Site Prep" with new provided picture. *(Completed May 10)*
 - [x] **Instagram Icon Investigation/Removal** *(from David, May 10)* — Investigate why the Instagram icon isn't working (currently links to `href="#"`) and either link it to their actual Instagram profile or remove it. *(Completed May 20)*
+- [x] **Before & After Showcase Update** *(from Anden, May 25)*. Added a new lot clearing before/after showcase as the second project in the carousel. *(Completed May 25)*
+- [x] **Shrub & Bush Removal Service** *(from David, May 25)*. Create a new service card for shrub and bush removal using the provided tractor photo. *(Completed May 25)*
 
 ---
 

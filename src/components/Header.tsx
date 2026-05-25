@@ -47,12 +47,12 @@ export default function Header() {
       <header>
         <div className="container nav-container">
           <div className="logo">
-            <Image 
-              src="/images/logo-web.png" 
-              alt="Ground Breaker Land Management Logo" 
-              width={400} 
-              height={300} 
-              className="h-full w-auto" 
+            <Image
+              src="/images/logo-web.png"
+              alt="Ground Breaker Land Management Logo"
+              width={400}
+              height={300}
+              className="h-full w-auto"
               priority
               unoptimized
             />

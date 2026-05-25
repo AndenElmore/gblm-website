@@ -4,6 +4,24 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### May 25, 2026
+- **Shrub and Bush Removal Service**:
+  - Added a new service card for Shrub and Bush Removal in [Services.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/Services.tsx#L103) using the tractor photo provided by the client, saved as `shrub-bush-removal.jpg`.
+  - **🔂 REVERSAL PROTOCOL**: To revert, remove the service card element representing Shrub and Bush Removal from `Services.tsx` and delete the image file from the public directory.
+
+- **Before and After Showcase Update**:
+  - Added a new lot clearing before and after showcase as the second slide in [BeforeAfter.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/BeforeAfter.tsx#L17).
+  - **🔂 REVERSAL PROTOCOL**: To revert, remove the slide object at index 1 from the `examples` array in `BeforeAfter.tsx`.
+
+- **Project Showcase Video Update**:
+  - Updated the project showcase video source in `VideoSection.tsx` to reference the final video provided by the client, which includes the requested bushhogging footage, before and after shots, and lawn rolling scenes.
+  - **🔂 REVERSAL PROTOCOL**: To revert back to the previous video, restore the source element in [VideoSection.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/VideoSection.tsx#L20) to:
+    ```tsx
+    <source src="/videos/David_Hero_Main.mp4" type="video/mp4" />
+    ```
+
+---
+
 ### May 20, 2026
 - **Social Media Links Update**:
   - Removed the non-functional Instagram icon link (which was pointing to `href="#"`) from both the **Header Top Bar** and the **Footer** as requested.

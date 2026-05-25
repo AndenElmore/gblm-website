@@ -102,7 +102,23 @@ export default function Services({ title = "Our Services" }: { title?: string })
             </div>
           </div>
 
-
+          {/* Service 5: Shrub & Bush Removal */}
+          <div className="service-card">
+            <div className="service-image-container">
+              <Image 
+                src="/images/shrub-bush-removal.jpg" 
+                alt="Shrub & Bush Removal" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            <div className="service-text-content">
+              <i className="fa-solid fa-tractor"></i>
+              <h3>Shrub & Bush Removal</h3>
+              <p>Complete removal of overgrown shrubs, hedges, and invasive bushes to reclaim your yard and restore your landscape.</p>
+              <a href="#contact" className="btn btn-small">Book Now</a>
+            </div>
+          </div>
 
           {/* Service 6: Tree & Storm Cleanup */}
           <div className="service-card">

@@ -12,6 +12,12 @@ export default function BeforeAfter() {
       after: "/images/bushhogging-after.jpg",
     },
     {
+      id: 6,
+      title: "Lot Clearing & Reclamation",
+      before: "/images/IMAGE%202026-05-25%2011:44:15.jpg",
+      after: "/images/IMAGE%202026-05-25%2011:44:35.jpg",
+    },
+    {
       id: 1,
       title: "Land Clearing & Reclamation",
       before: "/images/Scene_1before.jpg",
