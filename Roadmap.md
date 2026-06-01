@@ -15,6 +15,7 @@ The following messages have been logged from Telegram and not yet triaged into t
 - [ ] [2026-05-25] David: Can we put this into project show case ?
 - [ ] [2026-05-25] Anden: Please update the hero section background to this image. Image: [photo_AQADpgxrG246qUR-.jpg](/images/telegram/photo_AQADpgxrG246qUR-.jpg)
 - [ ] [2026-05-25] Anden: Can we put this in the project showcase ? (with video) Video: [video_AgADEwgAAm46qUQ.MP4](/videos/telegram/video_AgADEwgAAm46qUQ.MP4)
+- [ ] [2026-05-31] David: Can we get this video added to the project showcase? Video: [video_AgADoQgAAteu4UQ.MP4](/videos/telegram/video_AgADoQgAAteu4UQ.MP4)
 
 ---
 
