@@ -20,6 +20,7 @@ The following messages have been logged from Telegram and not yet triaged into t
 - [ ] [2026-06-18] David: Add this video to the project showcase. Video: [video_AgADMQgAAkGooEU.MOV](/videos/telegram/video_AgADMQgAAkGooEU.MOV)
 - [ ] [2026-06-18] David: Also add the other video mowing the field to the project showcase
 - [ ] [2026-06-20] David: Can you add this to the projects completed section? (with photo) Image: [photo_AQADjwxrG2e4uUV-.jpg](/images/telegram/photo_AQADjwxrG2e4uUV-.jpg)
+- [ ] [2026-06-21] David: Can you replace the driveway and roads image with this image? Image: [photo_AQADjgxrG2e4uUV-.jpg](/images/telegram/photo_AQADjgxrG2e4uUV-.jpg)
 
 ---
 
