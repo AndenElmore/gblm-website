@@ -5,6 +5,10 @@ This document tracks all modifications and improvements made to the GBLM Website
 ---
 
 ### June 23, 2026
+- **Telegram Notes & Roadmap Triage**:
+  - Triaged all pending Telegram notes from `Roadmap.md` into actionable steps under Phase A in `Development_Roadmap.md`.
+  - Archived completed log notes to maintain a clean workspace.
+
 - **Logo Update**:
   - Swapped out the old green/gold logo files (`logo-web.png` and `logo.png`) with the client's new circular compass logo.
   - Used `sips` to convert the client-provided JPEG to PNG format to match current filename paths and ensure transparent-capable extension rendering.
