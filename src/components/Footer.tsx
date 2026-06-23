@@ -27,7 +27,7 @@ export default function Footer() {
               <p className="text-sm text-gray-400">Thursday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
               <p className="text-sm text-gray-400">Friday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
               <p className="text-sm text-gray-400">Saturday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
-              <p className="text-sm text-[#d4a017] font-semibold">Sunday: Closed</p>
+              <p className="text-sm text-[#615d5c] font-semibold">Sunday: Closed</p>
             </div>
           </div>
           <div className="footer-col">

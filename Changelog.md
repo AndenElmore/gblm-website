@@ -4,6 +4,21 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### June 23, 2026
+- **Global Theme Color Refactor**:
+  - Transformed the site design palette from green/gold to blue/gray.
+  - Replaced the primary green (`#2e5c33` / `var(--primary-green)`) with a light blue (`#9cc0ed`).
+  - Replaced the accent gold (`#d4a017` / `var(--accent-gold)`) with a medium gray (`#615d5c`).
+  - Adjusted mobile form header and project status text color to ensure proper accessibility contrast on the new light blue background.
+  - **🔂 REVERSAL PROTOCOL**: To revert the colors back to the green/gold scheme:
+    1. In `src/app/globals.css`, change the theme variables:
+       - `--color-primary-green` & `--primary-green` back to `#2e5c33`
+       - `--color-accent-gold` & `--accent-gold` back to `#d4a017`
+       - `rgba(156, 192, 237, 0.1)` focus shadow back to `rgba(46, 92, 51, 0.1)`
+    2. Revert the hardcoded changes in component files (`Contact.tsx`, `FAQ.tsx`, `Reviews.tsx`, `ProjectGallery.tsx`, `ServiceArea.tsx`, `BeforeAfter.tsx`, `Footer.tsx`) and page files (`privacy-policy/page.tsx`, `terms-of-service/page.tsx`, `blog/page.tsx`) by replacing `#9cc0ed` with `#2e5c33` and `#615d5c` with `#d4a017`. Ensure the text contrast color for the mobile contact header in `Contact.tsx` is changed back to `text-white`, and the after badge in `BeforeAfter.tsx` back to `text-black`.
+
+---
+
 ### May 25, 2026
 - **Shrub and Bush Removal Service**:
   - Added a new service card for Shrub and Bush Removal in [Services.tsx](file:///Users/andenelmore/Desktop/First%20Page%20South/Clients/David%20Kaye/Website/GBLM%20SITE/src/components/Services.tsx#L103) using the tractor photo provided by the client, saved as `shrub-bush-removal.jpg`.

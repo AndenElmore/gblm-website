@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-green: #2e5c33;
-  --color-accent-gold: #d4a017;
+  --color-primary-green: #9cc0ed;
+  --color-accent-gold: #615d5c;
   --font-sans: var(--font-open-sans), sans-serif;
   --font-heading: var(--font-montserrat), sans-serif;
 }
@@ -33,8 +33,8 @@ img, video, canvas, svg {
 }
 
 :root {
-  --primary-green: #2e5c33;
-  --accent-gold: #d4a017;
+  --primary-green: #9cc0ed;
+  --accent-gold: #615d5c;
   --dark-bg: #111111;
   --white: #ffffff;
   --max-width: 1200px;
@@ -109,10 +109,10 @@ h4 {
 }
 /* --- GLOBAL VARIABLES --- */
 :root {
-    /* Matches the Green in the tractor/ribbon */
-    --primary-green: #2e5c33;
-    /* Matches the Gold in the compass/text */
-    --accent-gold: #d4a017;
+    /* Matches the Blue in the tractor/ribbon */
+    --primary-green: #9cc0ed;
+    /* Matches the Gray in the compass/text */
+    --accent-gold: #615d5c;
     --dark-bg: #111111;
     --dark-text: #333333;
     --light-bg: #f4f4f4;
@@ -627,7 +627,7 @@ header {
 .form-control:focus {
     outline: none;
     border-color: var(--primary-green);
-    box-shadow: 0 0 0 2px rgba(46, 92, 51, 0.1);
+    box-shadow: 0 0 0 2px rgba(156, 192, 237, 0.1);
 }
 
 select.form-control {

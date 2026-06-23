@@ -14,7 +14,7 @@ export default function ServiceArea() {
           <h2 className="text-6xl md:text-8xl font-bold font-montserrat mb-4 uppercase tracking-[0.2em]" style={{ color: '#ffffff', opacity: 1 }}>
             Proudly Serving
           </h2>
-          <div className="w-24 h-1 bg-[#d4a017] mx-auto mb-10"></div>
+          <div className="w-24 h-1 bg-[#615d5c] mx-auto mb-10"></div>
           <p className="text-2xl md:text-3xl text-white font-medium tracking-widest uppercase opacity-90">
             Oconee County & A 50-Mile Radius
           </p>
@@ -25,7 +25,7 @@ export default function ServiceArea() {
             <Link 
               key={city} 
               href={`/locations/${city.toLowerCase().replace(/ /g, '-')}`}
-              className="px-10 py-5 border-2 border-[#d4a017] text-[#d4a017] font-bold rounded-full hover:bg-[#d4a017] hover:text-black transition-all duration-300 text-xl md:text-2xl hover:scale-110 shadow-lg"
+              className="px-10 py-5 border-2 border-[#615d5c] text-[#615d5c] font-bold rounded-full hover:bg-[#615d5c] hover:text-black transition-all duration-300 text-xl md:text-2xl hover:scale-110 shadow-lg"
             >
               {city}
             </Link>

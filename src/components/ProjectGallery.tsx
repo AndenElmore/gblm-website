@@ -13,7 +13,7 @@ export default function ProjectGallery() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-5 max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2e5c33] mb-4">Project Gallery</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#9cc0ed] mb-4">Project Gallery</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           See the difference heavy equipment and professional expertise can make. From overgrown, raw land to perfectly cleared and graded sites.
         </p>

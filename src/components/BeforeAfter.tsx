@@ -105,8 +105,8 @@ export default function BeforeAfter() {
 
             {/* AFTER PANEL */}
             <div className="flex flex-col gap-4">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#d4a017]/40 shadow-lg">
-                <div className="absolute top-4 right-4 z-20 bg-[#d4a017] text-black px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#615d5c]/40 shadow-lg">
+                <div className="absolute top-4 right-4 z-20 bg-[#615d5c] text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
                   After
                 </div>
                 <Image 
@@ -118,7 +118,7 @@ export default function BeforeAfter() {
                 />
               </div>
               <div className="text-center">
-                <p className="text-[#d4a017] font-bold uppercase text-xs tracking-[0.2em]">{examples[currentIndex].title}</p>
+                <p className="text-[#615d5c] font-bold uppercase text-xs tracking-[0.2em]">{examples[currentIndex].title}</p>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export default function BeforeAfter() {
           <div className="flex items-center justify-center gap-10 mt-12 pt-6 border-t border-white/5">
             <button 
               onClick={prevSlide}
-              className="text-white/40 hover:text-[#d4a017] transition-colors"
+              className="text-white/40 hover:text-[#615d5c] transition-colors"
               aria-label="Previous"
             >
               <i className="fa-solid fa-chevron-left text-2xl"></i>
@@ -139,14 +139,14 @@ export default function BeforeAfter() {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${currentIndex === i ? 'bg-[#d4a017] w-10' : 'bg-white/10 w-3 hover:bg-white/20'}`}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${currentIndex === i ? 'bg-[#615d5c] w-10' : 'bg-white/10 w-3 hover:bg-white/20'}`}
                 />
               ))}
             </div>
 
             <button 
               onClick={nextSlide}
-              className="text-white/40 hover:text-[#d4a017] transition-colors"
+              className="text-white/40 hover:text-[#615d5c] transition-colors"
               aria-label="Next"
             >
               <i className="fa-solid fa-chevron-right text-2xl"></i>
