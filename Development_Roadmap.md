@@ -29,7 +29,6 @@
 - [x] **Instagram Icon Investigation/Removal** *(from David, May 10)* — Investigate why the Instagram icon isn't working (currently links to `href="#"`) and either link it to their actual Instagram profile or remove it. *(Completed May 20)*
 - [x] **Before & After Showcase Update** *(from Anden, May 25)*. Added a new lot clearing before/after showcase as the second project in the carousel. *(Completed May 25)*
 - [x] **Shrub & Bush Removal Service** *(from David, May 25)*. Create a new service card for shrub and bush removal using the provided tractor photo. *(Completed May 25)*
-- [ ] **Hero Section Background** *(from Anden, May 25)* — Update the hero section background to use the new Telegram image (`photo_AQADpgxrG246qUR-.jpg`).
 - [ ] **Project Showcase Videos** *(from David/Anden, May 25 - Jun 18)* — Build a video carousel or system to show multiple project showcase videos:
     - `video_AgADEwgAAm46qUQ.MP4`
     - `video_AgADoQgAAteu4UQ.MP4`
@@ -66,6 +65,7 @@
 ## 💡 Brainstorming & Ideas Bucket
 *Drop ideas here before committing to a phase. Not scheduled yet.*
 
+- [ ] **Hero Section Background** *(from Anden, May 25; Deferred)* — Update the hero section background to use the new Telegram image (`photo_AQADpgxrG246qUR-.jpg`).
 - [ ] **Interactive Land Management Quote Tool** — Multi-step form asking for acreage and service type to produce a tailored estimate request.
 - [ ] **Blog Foundation** — Set up `/blog` route structure for inbound land management content marketing.
 - [ ] **Glassmorphism Footer** — Update footer to match the premium glass theme of the Hero section.
