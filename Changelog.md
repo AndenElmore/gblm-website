@@ -5,6 +5,11 @@ This document tracks all modifications and improvements made to the GBLM Website
 ---
 
 ### June 23, 2026
+- **Logo Update**:
+  - Swapped out the old green/gold logo files (`logo-web.png` and `logo.png`) with the client's new circular compass logo.
+  - Used `sips` to convert the client-provided JPEG to PNG format to match current filename paths and ensure transparent-capable extension rendering.
+  - **🔂 REVERSAL PROTOCOL**: To revert back to the previous logo, restore the backup version of `/images/logo-web.png` and `/images/logo.png` from Git history.
+
 - **Global Theme Color Refactor & Refinements**:
   - Transformed the primary site color from green (`#2e5c33`) to blue (`#9cc0ed`).
   - Adjusted theme colors so **Gold** (`#d4a017`) remains the secondary accent for high-attention interactive elements (buttons, chevron icons, reviews stars, navigation dots, and tag links).
