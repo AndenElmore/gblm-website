@@ -29,6 +29,14 @@
 - [x] **Instagram Icon Investigation/Removal** *(from David, May 10)* — Investigate why the Instagram icon isn't working (currently links to `href="#"`) and either link it to their actual Instagram profile or remove it. *(Completed May 20)*
 - [x] **Before & After Showcase Update** *(from Anden, May 25)*. Added a new lot clearing before/after showcase as the second project in the carousel. *(Completed May 25)*
 - [x] **Shrub & Bush Removal Service** *(from David, May 25)*. Create a new service card for shrub and bush removal using the provided tractor photo. *(Completed May 25)*
+- [ ] **Hero Section Background** *(from Anden, May 25)* — Update the hero section background to use the new Telegram image (`photo_AQADpgxrG246qUR-.jpg`).
+- [ ] **Project Showcase Videos** *(from David/Anden, May 25 - Jun 18)* — Build a video carousel or system to show multiple project showcase videos:
+    - `video_AgADEwgAAm46qUQ.MP4`
+    - `video_AgADoQgAAteu4UQ.MP4`
+    - `video_AgADMQgAAkGooEU.MOV`
+    - Mowing the field video
+- [ ] **Projects Completed Section Gallery** *(from David, Jun 18 - Jun 20)* — Add texting photos and `photo_AQADjwxrG2e4uUV-.jpg` to the completed projects / before-after section.
+- [ ] **Driveways & Roads Service Image** *(from David, Jun 21)* — Replace the Driveways & Roads service card image with `photo_AQADjgxrG2e4uUV-.jpg` from Telegram.
 
 ---
 
