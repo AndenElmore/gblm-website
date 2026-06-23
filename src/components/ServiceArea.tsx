@@ -25,7 +25,7 @@ export default function ServiceArea() {
             <Link 
               key={city} 
               href={`/locations/${city.toLowerCase().replace(/ /g, '-')}`}
-              className="px-10 py-5 border-2 border-[#615d5c] text-[#615d5c] font-bold rounded-full hover:bg-[#615d5c] hover:text-black transition-all duration-300 text-xl md:text-2xl hover:scale-110 shadow-lg"
+              className="px-10 py-5 border-2 border-[#d4a017] text-[#d4a017] font-bold rounded-full hover:bg-[#d4a017] hover:text-black transition-all duration-300 text-xl md:text-2xl hover:scale-110 shadow-lg"
             >
               {city}
             </Link>

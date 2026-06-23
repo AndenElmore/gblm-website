@@ -36,13 +36,13 @@ export default function FAQ() {
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={index} className={`bg-white rounded-xl shadow-md border overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#9cc0ed] shadow-lg ring-1 ring-[#9cc0ed]' : 'border-gray-200 hover:border-[#615d5c]'}`}>
+              <div key={index} className={`bg-white rounded-xl shadow-md border overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#9cc0ed] shadow-lg ring-1 ring-[#9cc0ed]' : 'border-gray-200 hover:border-[#d4a017]'}`}>
                 <button 
                   className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none group"
                   onClick={() => toggleFAQ(index)}
                 >
                   <span className={`font-bold text-xl md:text-2xl transition-colors duration-300 ${isOpen ? 'text-[#9cc0ed]' : 'text-gray-900'}`}>{faq.question}</span>
-                  <div className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isOpen ? 'bg-[#9cc0ed] text-gray-900 rotate-180' : 'bg-gray-100 text-[#615d5c] group-hover:bg-[#615d5c] group-hover:text-white'}`}>
+                  <div className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isOpen ? 'bg-[#9cc0ed] text-gray-900 rotate-180' : 'bg-gray-100 text-[#d4a017] group-hover:bg-[#d4a017] group-hover:text-white'}`}>
                     <i className="fa-solid fa-chevron-down text-lg"></i>
                   </div>
                 </button>

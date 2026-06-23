@@ -2,7 +2,7 @@
 
 @theme {
   --color-primary-green: #9cc0ed;
-  --color-accent-gold: #615d5c;
+  --color-accent-gold: #d4a017;
   --font-sans: var(--font-open-sans), sans-serif;
   --font-heading: var(--font-montserrat), sans-serif;
 }
@@ -34,7 +34,7 @@ img, video, canvas, svg {
 
 :root {
   --primary-green: #9cc0ed;
-  --accent-gold: #615d5c;
+  --accent-gold: #d4a017;
   --dark-bg: #111111;
   --white: #ffffff;
   --max-width: 1200px;
@@ -111,8 +111,8 @@ h4 {
 :root {
     /* Matches the Blue in the tractor/ribbon */
     --primary-green: #9cc0ed;
-    /* Matches the Gray in the compass/text */
-    --accent-gold: #615d5c;
+    /* Matches the Gold in the compass/text */
+    --accent-gold: #d4a017;
     --dark-bg: #111111;
     --dark-text: #333333;
     --light-bg: #f4f4f4;

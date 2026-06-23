@@ -5,11 +5,11 @@ This document tracks all modifications and improvements made to the GBLM Website
 ---
 
 ### June 23, 2026
-- **Global Theme Color Refactor**:
-  - Transformed the site design palette from green/gold to blue/gray.
-  - Replaced the primary green (`#2e5c33` / `var(--primary-green)`) with a light blue (`#9cc0ed`).
-  - Replaced the accent gold (`#d4a017` / `var(--accent-gold)`) with a medium gray (`#615d5c`).
-  - Adjusted mobile form header and project status text color to ensure proper accessibility contrast on the new light blue background.
+- **Global Theme Color Refactor & Refinements**:
+  - Transformed the primary site color from green (`#2e5c33`) to blue (`#9cc0ed`).
+  - Adjusted theme colors so **Gold** (`#d4a017`) remains the secondary accent for high-attention interactive elements (buttons, chevron icons, reviews stars, navigation dots, and tag links).
+  - Retained **Gray** (`#615d5c`) for low-attention static elements (card top borders, decorative dividers, slide labels, "After" panel borders, and blog placeholder badges).
+  - Adjusted mobile contact form header and badge text colors to guarantee proper contrast and readability.
   - **🔂 REVERSAL PROTOCOL**: To revert the colors back to the green/gold scheme:
     1. In `src/app/globals.css`, change the theme variables:
        - `--color-primary-green` & `--primary-green` back to `#2e5c33`

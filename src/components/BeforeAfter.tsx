@@ -128,7 +128,7 @@ export default function BeforeAfter() {
           <div className="flex items-center justify-center gap-10 mt-12 pt-6 border-t border-white/5">
             <button 
               onClick={prevSlide}
-              className="text-white/40 hover:text-[#615d5c] transition-colors"
+              className="text-white/40 hover:text-[#d4a017] transition-colors"
               aria-label="Previous"
             >
               <i className="fa-solid fa-chevron-left text-2xl"></i>
@@ -139,14 +139,14 @@ export default function BeforeAfter() {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${currentIndex === i ? 'bg-[#615d5c] w-10' : 'bg-white/10 w-3 hover:bg-white/20'}`}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${currentIndex === i ? 'bg-[#d4a017] w-10' : 'bg-white/10 w-3 hover:bg-white/20'}`}
                 />
               ))}
             </div>
 
             <button 
               onClick={nextSlide}
-              className="text-white/40 hover:text-[#615d5c] transition-colors"
+              className="text-white/40 hover:text-[#d4a017] transition-colors"
               aria-label="Next"
             >
               <i className="fa-solid fa-chevron-right text-2xl"></i>
