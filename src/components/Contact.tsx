@@ -134,14 +134,14 @@ export default function Contact() {
               <p>Ready to start your next project? Fill out the form below, and we'll get back to you with a professional estimate tailored to your land.</p>
               <div className="contact-info mt-10">
                 <p className="flex items-start gap-3">
-                  <i className="fa-solid fa-phone mt-1 text-[var(--accent-blue)]"></i> 
+                  <i className="fa-solid fa-phone mt-1 text-[var(--accent-gold)]"></i> 
                   <span className="flex-1">
                     <strong className="block mb-1">Call or Text:</strong>
                     <a href="tel:+17065103942" className="text-gray-600 hover:text-[var(--primary-gray)]">(706) 510-3942</a>
                   </span>
                 </p>
                 <p className="flex items-start gap-3 mt-4">
-                  <i className="fa-solid fa-envelope mt-1 text-[var(--accent-blue)]"></i> 
+                  <i className="fa-solid fa-envelope mt-1 text-[var(--accent-gold)]"></i> 
                   <span className="flex-1 break-words">
                     <strong className="block mb-1">Email:</strong>
                     <a href="mailto:groundbreakerlandmanagement@gmail.com" className="text-gray-600 hover:text-[var(--primary-gray)] break-all lg:break-words">groundbreakerlandmanagement@gmail.com</a>
@@ -167,7 +167,7 @@ export default function Contact() {
       
       {/* Floating SMS CTA for Mobile */}
       <div className="fixed bottom-4 right-4 z-50 md:hidden">
-        <a href="sms:+17065103942" className="bg-[var(--accent-blue)] text-black px-4 py-3 rounded-full shadow-lg font-bold flex items-center gap-2 border border-yellow-500">
+        <a href="sms:+17065103942" className="bg-[var(--accent-gold)] text-black px-4 py-3 rounded-full shadow-lg font-bold flex items-center gap-2 border border-yellow-500">
           <i className="fa-solid fa-comment-sms"></i> Text Us
         </a>
       </div>

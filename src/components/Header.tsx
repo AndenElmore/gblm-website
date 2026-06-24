@@ -38,7 +38,7 @@ export default function Header() {
           </div>
           <div className="flex gap-4 ml-6 items-center">
             <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              <i className="fa-brands fa-facebook text-lg text-[var(--accent-blue)]"></i>
+              <i className="fa-brands fa-facebook text-lg text-[var(--accent-gold)]"></i>
             </a>
           </div>
         </div>
