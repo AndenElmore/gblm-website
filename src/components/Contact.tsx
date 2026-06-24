@@ -76,7 +76,7 @@ export default function Contact() {
 
     return (
       <form id="contact-form" data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit} suppressHydrationWarning>
-        <div className="md:hidden bg-[#28292d] text-white p-5 rounded-lg mb-6 shadow-md text-center">
+        <div className="md:hidden bg-[#514d4c] text-white p-5 rounded-lg mb-6 shadow-md text-center">
           <h3 className="font-bold text-xl mb-1">Get an Estimate</h3>
           <p className="text-sm opacity-90">Fill out your details below and we will contact you directly to discuss your project.</p>
         </div>

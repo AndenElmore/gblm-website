@@ -13,7 +13,7 @@ export default function Blog() {
       <main className="py-24 bg-gray-50">
         <div className="container mx-auto px-5">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold font-montserrat text-[#28292d] mb-6 uppercase">Our Blog</h1>
+            <h1 className="text-4xl md:text-6xl font-bold font-montserrat text-[#514d4c] mb-6 uppercase">Our Blog</h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Expert advice and recent projects from the Ground Breaker team.</p>
           </div>
           
