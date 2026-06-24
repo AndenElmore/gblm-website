@@ -70,7 +70,7 @@ export default function Services({ title = "Our Services" }: { title?: string })
           <div className="service-card">
             <div className="service-image-container">
               <Image 
-                src="/images/IMG_0019.JPG" 
+                src="/images/telegram/photo_AQADjgxrG2e4uUV-.jpg" 
                 alt="Driveways & Roads" 
                 fill 
                 className="object-cover"
