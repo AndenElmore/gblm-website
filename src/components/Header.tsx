@@ -48,7 +48,7 @@ export default function Header() {
         <div className="container nav-container">
           <div className="logo">
             <Image
-              src="/images/logo-web.png"
+              src="/images/logo-web-v2.png"
               alt="Ground Breaker Land Management Logo"
               width={400}
               height={300}

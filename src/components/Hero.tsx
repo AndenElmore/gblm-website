@@ -82,7 +82,7 @@ export default function Hero() {
         >
           <div className="relative w-full max-w-[500px] aspect-square">
             <Image 
-              src="/images/logo-web.png" 
+              src="/images/logo-web-v2.png" 
               alt="GBLM Logo" 
               fill 
               className="object-contain drop-shadow-2xl"

@@ -33,7 +33,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LandscapingService",
               "name": "Ground Breaker Land Management",
-              "image": "https://groundbreakerlandmanagement.com/images/logo.png",
+              "image": "https://groundbreakerlandmanagement.com/images/logo-v2.png",
               "description": "Professional land management services including seeding, grading, bush hogging, and site preparation. Serving a 100-mile radius around Athens, GA.",
               "@id": "https://groundbreakerlandmanagement.com",
               "url": "https://groundbreakerlandmanagement.com",
