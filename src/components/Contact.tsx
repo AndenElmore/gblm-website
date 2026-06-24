@@ -67,7 +67,7 @@ export default function Contact() {
     if (isSubmitted) {
       return (
         <div className="text-center py-10" id="form-success">
-          <i className="fa-solid fa-circle-check text-4xl text-[var(--primary-green)] mb-4"></i>
+          <i className="fa-solid fa-circle-check text-4xl text-[var(--primary-gray)] mb-4"></i>
           <h3 className="text-2xl font-bold mb-2">Thank You</h3>
           <p>We've received your request and will call you shortly to discuss your project.</p>
         </div>
@@ -76,7 +76,7 @@ export default function Contact() {
 
     return (
       <form id="contact-form" data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit} suppressHydrationWarning>
-        <div className="md:hidden bg-[#9cc0ed] text-gray-900 p-5 rounded-lg mb-6 shadow-md text-center">
+        <div className="md:hidden bg-[#28292d] text-white p-5 rounded-lg mb-6 shadow-md text-center">
           <h3 className="font-bold text-xl mb-1">Get an Estimate</h3>
           <p className="text-sm opacity-90">Fill out your details below and we will contact you directly to discuss your project.</p>
         </div>
@@ -134,17 +134,17 @@ export default function Contact() {
               <p>Ready to start your next project? Fill out the form below, and we'll get back to you with a professional estimate tailored to your land.</p>
               <div className="contact-info mt-10">
                 <p className="flex items-start gap-3">
-                  <i className="fa-solid fa-phone mt-1 text-[var(--accent-gold)]"></i> 
+                  <i className="fa-solid fa-phone mt-1 text-[var(--accent-blue)]"></i> 
                   <span className="flex-1">
                     <strong className="block mb-1">Call or Text:</strong>
-                    <a href="tel:+17065103942" className="text-gray-600 hover:text-[var(--primary-green)]">(706) 510-3942</a>
+                    <a href="tel:+17065103942" className="text-gray-600 hover:text-[var(--primary-gray)]">(706) 510-3942</a>
                   </span>
                 </p>
                 <p className="flex items-start gap-3 mt-4">
-                  <i className="fa-solid fa-envelope mt-1 text-[var(--accent-gold)]"></i> 
+                  <i className="fa-solid fa-envelope mt-1 text-[var(--accent-blue)]"></i> 
                   <span className="flex-1 break-words">
                     <strong className="block mb-1">Email:</strong>
-                    <a href="mailto:groundbreakerlandmanagement@gmail.com" className="text-gray-600 hover:text-[var(--primary-green)] break-all lg:break-words">groundbreakerlandmanagement@gmail.com</a>
+                    <a href="mailto:groundbreakerlandmanagement@gmail.com" className="text-gray-600 hover:text-[var(--primary-gray)] break-all lg:break-words">groundbreakerlandmanagement@gmail.com</a>
                   </span>
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default function Contact() {
       
       {/* Floating SMS CTA for Mobile */}
       <div className="fixed bottom-4 right-4 z-50 md:hidden">
-        <a href="sms:+17065103942" className="bg-[var(--accent-gold)] text-black px-4 py-3 rounded-full shadow-lg font-bold flex items-center gap-2 border border-yellow-500">
+        <a href="sms:+17065103942" className="bg-[var(--accent-blue)] text-black px-4 py-3 rounded-full shadow-lg font-bold flex items-center gap-2 border border-yellow-500">
           <i className="fa-solid fa-comment-sms"></i> Text Us
         </a>
       </div>

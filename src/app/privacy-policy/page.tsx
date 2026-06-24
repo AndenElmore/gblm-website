@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <Header />
       <main className="py-24 bg-white">
         <div className="container mx-auto px-5 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-[#9cc0ed] mb-10 border-b pb-6">Privacy Policy</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-montserrat text-[#28292d] mb-10 border-b pb-6">Privacy Policy</h1>
           
           <div className="prose prose-lg text-gray-700 space-y-8">
             <section>

@@ -20,11 +20,11 @@ export default function Reviews() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-5 max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#9cc0ed] mb-12">What Our Clients Say</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#28292d] mb-12">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review, idx) => (
             <div key={idx} className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#615d5c]">
-              <div className="flex text-[#d4a017] mb-4 text-xl">
+              <div className="flex text-[#9cc0ed] mb-4 text-xl">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>

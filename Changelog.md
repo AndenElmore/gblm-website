@@ -4,6 +4,19 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### June 24, 2026
+- **Branding Color & Texture Refactor**:
+  - Replaced primary color from blue `#9cc0ed` to charcoal gray (`#28292d`), matching the new logo background.
+  - Set secondary accent color to light blue (`#9cc0ed`) for all interactive elements (buttons, link hovers, active tags, review stars, and chevron icons).
+  - Added a custom diagonal textured background to the Hero section (`.hero-v2`) combining charcoal gray with radial slate-blue gradients (`#347184`) at the corners to align with the logo's paint brush strokes.
+  - Swapped mobile form header background to `#28292d` and text color to white for optimal contrast and readability.
+  - **🔂 REVERSAL PROTOCOL**: To revert:
+    1. In `globals.css`, change theme variable `--color-primary-gray` back to `#9cc0ed` and `--color-accent-blue` to `#d4a017` (gold) or `#615d5c` (gray).
+    2. Revert `.hero-v2` background style to solid `var(--primary-green)`.
+    3. Revert component changes by replacing variable mappings and hardcoded hex values in `Contact.tsx`, `FAQ.tsx`, `Reviews.tsx`, `ServiceArea.tsx`, `BeforeAfter.tsx`, `Footer.tsx`, and the static page layouts.
+
+---
+
 ### June 23, 2026
 - **Telegram Notes & Roadmap Triage**:
   - Triaged all pending Telegram notes from `Roadmap.md` into actionable steps under Phase A in `Development_Roadmap.md`.

@@ -10,7 +10,7 @@ export default function Footer() {
             <p className="max-w-[300px]">Providing top-quality land management services. No job is too big or too small for our team.</p>
             <div className="flex gap-5 mt-6">
               <a href="https://www.facebook.com/profile.php?id=61584159944480" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <i className="fa-brands fa-facebook text-2xl text-[var(--accent-gold)]"></i>
+                <i className="fa-brands fa-facebook text-2xl text-[var(--accent-blue)]"></i>
               </a>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
               <p className="text-sm text-gray-400">Thursday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
               <p className="text-sm text-gray-400">Friday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
               <p className="text-sm text-gray-400">Saturday: <span className="text-white">9:00 AM - 5:00 PM</span></p>
-              <p className="text-sm text-[#615d5c] font-semibold">Sunday: Closed</p>
+              <p className="text-sm text-[#9cc0ed] font-semibold">Sunday: Closed</p>
             </div>
           </div>
           <div className="footer-col">

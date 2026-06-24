@@ -9,10 +9,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
         </div>
           
         <div className="max-w-4xl mx-auto relative group" style={{ marginTop: "60px", marginBottom: "100px" }}>
-          <div className="absolute -inset-1 bg-gradient-to-r from-[var(--primary-green)] to-[var(--accent-gold)] rounded-2xl blur opacity-20 transition duration-500 group-hover:opacity-40"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-[var(--primary-gray)] to-[var(--accent-blue)] rounded-2xl blur opacity-20 transition duration-500 group-hover:opacity-40"></div>
           <div className="relative bg-white rounded-xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 border border-gray-100">
             <div className="shrink-0 bg-yellow-50 w-16 h-16 rounded-full flex items-center justify-center border border-yellow-100">
-              <i className="fa-solid fa-file-invoice-dollar text-2xl text-[var(--accent-gold)]"></i>
+              <i className="fa-solid fa-file-invoice-dollar text-2xl text-[var(--accent-blue)]"></i>
             </div>
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 font-['Montserrat']">Need Financing? We've Got You Covered.</h3>

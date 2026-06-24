@@ -28,7 +28,7 @@ export default function FAQ() {
     <section className="pt-48 pb-24 bg-white border-t border-gray-200">
       <div className="container mx-auto px-5 max-w-5xl">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-bold font-montserrat text-[#9cc0ed] mb-6 drop-shadow-sm uppercase">Frequently Asked Questions</h2>
+          <h2 className="text-5xl md:text-7xl font-bold font-montserrat text-[#28292d] mb-6 drop-shadow-sm uppercase">Frequently Asked Questions</h2>
           <p className="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-semibold">Have questions about our land clearing, grading, or bush hogging services? We've got answers.</p>
         </div>
         
@@ -36,13 +36,13 @@ export default function FAQ() {
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={index} className={`bg-white rounded-xl shadow-md border overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#9cc0ed] shadow-lg ring-1 ring-[#9cc0ed]' : 'border-gray-200 hover:border-[#d4a017]'}`}>
+              <div key={index} className={`bg-white rounded-xl shadow-md border overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#28292d] shadow-lg ring-1 ring-[#28292d]' : 'border-gray-200 hover:border-[#9cc0ed]'}`}>
                 <button 
                   className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none group"
                   onClick={() => toggleFAQ(index)}
                 >
-                  <span className={`font-bold text-xl md:text-2xl transition-colors duration-300 ${isOpen ? 'text-[#9cc0ed]' : 'text-gray-900'}`}>{faq.question}</span>
-                  <div className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isOpen ? 'bg-[#9cc0ed] text-gray-900 rotate-180' : 'bg-gray-100 text-[#d4a017] group-hover:bg-[#d4a017] group-hover:text-white'}`}>
+                  <span className={`font-bold text-xl md:text-2xl transition-colors duration-300 ${isOpen ? 'text-[#28292d]' : 'text-gray-900'}`}>{faq.question}</span>
+                  <div className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isOpen ? 'bg-[#28292d] text-white rotate-180' : 'bg-gray-100 text-[#9cc0ed] group-hover:bg-[#9cc0ed] group-hover:text-white'}`}>
                     <i className="fa-solid fa-chevron-down text-lg"></i>
                   </div>
                 </button>

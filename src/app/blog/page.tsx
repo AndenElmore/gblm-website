@@ -13,12 +13,12 @@ export default function Blog() {
       <main className="py-24 bg-gray-50">
         <div className="container mx-auto px-5">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold font-montserrat text-[#9cc0ed] mb-6 uppercase">Our Blog</h1>
+            <h1 className="text-4xl md:text-6xl font-bold font-montserrat text-[#28292d] mb-6 uppercase">Our Blog</h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Expert advice and recent projects from the Ground Breaker team.</p>
           </div>
           
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <div className="w-20 h-20 bg-[#615d5c] flex items-center justify-center rounded-full mb-8">
+            <div className="w-20 h-20 bg-[#9cc0ed] flex items-center justify-center rounded-full mb-8">
               <i className="fa-solid fa-hourglass-start text-3xl text-white"></i>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Coming Soon</h2>
