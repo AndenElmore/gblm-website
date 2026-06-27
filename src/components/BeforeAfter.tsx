@@ -6,12 +6,6 @@ import Image from "next/image";
 export default function BeforeAfter() {
   const examples = [
     {
-      id: 7,
-      title: "Completed Project Showcase",
-      before: "", // No before picture provided
-      after: "/images/telegram/photo_AQADjwxrG2e4uUV-.jpg",
-    },
-    {
       id: 5,
       title: "Bushhogging Fields & Pastures",
       before: "/images/bushhogging-before.jpg",
@@ -91,7 +85,6 @@ export default function BeforeAfter() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             
             {/* BEFORE PANEL */}
-            {examples[currentIndex].before && (
             <div className="flex flex-col gap-4">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-white/10 shadow-lg">
                 <div className="absolute top-4 left-4 z-20 bg-black/70 text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
@@ -109,20 +102,13 @@ export default function BeforeAfter() {
                 <p className="text-gray-400 font-bold uppercase text-xs tracking-[0.2em]">Initial State</p>
               </div>
             </div>
-            )}
 
             {/* AFTER PANEL */}
-            <div className={`flex flex-col gap-4 ${!examples[currentIndex].before ? 'md:col-span-2 max-w-4xl mx-auto w-full' : ''}`}>
+            <div className="flex flex-col gap-4">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-[#615d5c]/40 shadow-lg">
-                {examples[currentIndex].before ? (
-                  <div className="absolute top-4 right-4 z-20 bg-[#615d5c] text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
-                    After
-                  </div>
-                ) : (
-                  <div className="absolute top-4 left-4 z-20 bg-[#d4a017] text-black px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
-                    Completed Project
-                  </div>
-                )}
+                <div className="absolute top-4 right-4 z-20 bg-[#615d5c] text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
+                  After
+                </div>
                 <Image 
                   src={examples[currentIndex].after} 
                   alt="Property After" 
