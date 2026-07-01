@@ -12,6 +12,18 @@ export default function BeforeAfter() {
       after: "/images/bushhogging-after.jpg",
     },
     {
+      id: 8,
+      title: "Backyard Grading & Clearing",
+      before: "/images/oconee-deck-before.jpg",
+      after: "/images/oconee-deck-after.jpg",
+    },
+    {
+      id: 9,
+      title: "Side Yard Clearing & Regrading",
+      before: "/images/side-yard-before.jpg",
+      after: "/images/side-yard-after.jpg",
+    },
+    {
       id: 6,
       title: "Lot Clearing & Reclamation",
       before: "/images/IMAGE%202026-05-25%2011:44:15.jpg",

@@ -9,6 +9,8 @@ This document tracks all modifications and improvements made to the GBLM Website
   - Replaced the main project showcase video in `VideoSection.tsx` with the new Hardscaping Oconee County video.
 - **Projects Completed Section Update**:
   - Added a new before/after image pair (Brush Clearing & Access Roads) to the `BeforeAfter` component using the photos provided by David from the Telegram log.
+  - Added a second new before/after image pair (Backyard Grading & Clearing) to the `BeforeAfter` component.
+  - Added a third new before/after image pair (Side Yard Clearing & Regrading) to the `BeforeAfter` component.
   - Placed this new pair at the beginning of the `examples` array to make it the first project users see.
 
 ---
