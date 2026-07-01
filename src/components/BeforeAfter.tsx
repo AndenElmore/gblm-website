@@ -24,6 +24,12 @@ export default function BeforeAfter() {
       after: "/images/Scene_1after.jpg",
     },
     {
+      id: 7,
+      title: "Brush Clearing & Access Roads",
+      before: "/images/oconee-path-before-v2.jpg",
+      after: "/images/oconee-path-after.jpg",
+    },
+    {
       id: 2,
       title: "Brush & Debris Removal",
       before: "/images/Scene_2before.jpg",

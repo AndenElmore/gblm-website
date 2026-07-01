@@ -34,7 +34,7 @@
     - `video_AgADoQgAAteu4UQ.MP4`
     - `video_AgADMQgAAkGooEU.MOV`
     - Mowing the field video
-- [ ] **Projects Completed Section Gallery** *(from David, Jun 18 - Jun 20)* — Add texting photos and `photo_AQADjwxrG2e4uUV-.jpg` to the completed projects / before-after section.
+- [x] **Projects Completed Section Gallery** *(from David, Jun 18 - Jun 20)* — Add texting photos and `photo_AQADjwxrG2e4uUV-.jpg` to the completed projects / before-after section. *(Completed)*
 - [ ] **Driveways & Roads Service Image** *(from David, Jun 21)* — Replace the Driveways & Roads service card image with `photo_AQADjgxrG2e4uUV-.jpg` from Telegram.
 
 ---

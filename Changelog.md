@@ -4,6 +4,15 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### June 30, 2026
+- **Project Showcase Update**:
+  - Replaced the main project showcase video in `VideoSection.tsx` with the new Hardscaping Oconee County video.
+- **Projects Completed Section Update**:
+  - Added a new before/after image pair (Brush Clearing & Access Roads) to the `BeforeAfter` component using the photos provided by David from the Telegram log.
+  - Placed this new pair at the beginning of the `examples` array to make it the first project users see.
+
+---
+
 ### June 24, 2026
 - **Branding Color & Texture Refactor**:
   - Replaced primary color from blue `#9cc0ed` to charcoal gray (`#28292d`), matching the new logo background.

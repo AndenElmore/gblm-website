@@ -17,7 +17,7 @@ export default function VideoSection() {
             preload="auto" 
             className="w-full h-full object-cover"
           >
-            <source src="/videos/FInal%20hero%20video%20(52526).mp4" type="video/mp4" />
+            <source src="/videos/hardscaping-oconee-county.mp4" type="video/mp4" />
           </video>
         </div>
         
