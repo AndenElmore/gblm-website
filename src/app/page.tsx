@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Reviews from "@/components/Reviews";
 import ProjectGallery from "@/components/ProjectGallery";
 import ServiceArea from "@/components/ServiceArea";
+import AreasWeServe from "@/components/AreasWeServe";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <VideoSection />
         <Services />
+        <AreasWeServe />
         <BeforeAfter />
         <About />
         {/* <Reviews /> */}

@@ -46,7 +46,7 @@ export default function Header() {
 
       <header>
         <div className="container nav-container">
-          <div className="logo">
+          <a href="/" className="logo" aria-label="Ground Breaker Land Management home">
             <Image
               src="/images/logo-web-v2.png"
               alt="Ground Breaker Land Management - Land Clearing & Forestry Mulching in Bogart, Athens & Oconee County GA"
@@ -56,16 +56,16 @@ export default function Header() {
               priority
               unoptimized
             />
-          </div>
+          </a>
 
           <div className="hamburger" onClick={() => setMenuActive(!menuActive)}>
             <i className={`fa-solid ${menuActive ? 'fa-xmark' : 'fa-bars'}`}></i>
           </div>
 
           <nav className={`nav-links ${menuActive ? 'active' : ''}`}>
-            <a href="#home" onClick={() => setMenuActive(false)}>Home</a>
-            <a href="#services" onClick={() => setMenuActive(false)}>Services</a>
-            <a href="#about" onClick={() => setMenuActive(false)}>About</a>
+            <a href="/" onClick={() => setMenuActive(false)}>Home</a>
+            <a href="/#services" onClick={() => setMenuActive(false)}>Services</a>
+            <a href="/#about" onClick={() => setMenuActive(false)}>About</a>
             <a href="#contact" onClick={() => setMenuActive(false)}>Contact</a>
             <div className="nav-cta">
               <a href="#contact" className="btn" onClick={() => setMenuActive(false)}>Request a Quote</a>

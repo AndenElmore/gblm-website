@@ -11,6 +11,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { services, serviceSlugs } from "@/data/services";
+import { areaList } from "@/data/areas";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -188,23 +189,40 @@ export default async function ServicePage({ params }: Props) {
                     Related Services
                     <span className="absolute bottom-0 left-0 w-16 h-1 bg-[var(--accent-gold)] rounded-full" />
                   </h2>
-                  <div className="grid sm:grid-cols-3 gap-5">
+                  <div className="flex flex-wrap gap-4">
                     {service.related.map((r, i) => (
                       <Link
                         key={i}
                         href={r.href}
-                        className="group flex items-center justify-between gap-3 px-6 py-5 rounded-xl bg-[var(--accent-gold)] text-black font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[var(--accent-gold)] text-black font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                       >
                         <span>{r.label}</span>
-                        <i className="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        <i className="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
                       </Link>
                     ))}
                   </div>
-                  <p className="mt-8 text-gray-600 text-lg">
-                    Proudly serving <strong className="text-[var(--primary-gray)]">Bogart</strong>, <strong className="text-[var(--primary-gray)]">Watkinsville</strong>, <strong className="text-[var(--primary-gray)]">Athens</strong>, and the surrounding <strong className="text-[var(--primary-gray)]">Oconee County</strong> area.
-                  </p>
                 </div>
               )}
+
+              {/* --- Areas We Serve (service <-> area interlinking) --- */}
+              <div className="mt-16">
+                <h2 className="text-3xl md:text-[2rem] text-[var(--primary-gray)] font-bold mb-6 relative pb-4">
+                  Areas We Serve
+                  <span className="absolute bottom-0 left-0 w-16 h-1 bg-[var(--accent-gold)] rounded-full" />
+                </h2>
+                <p className="text-gray-700 text-[1.05rem] mb-5">Based in Bogart, we provide {service.navLabel.toLowerCase()} and full land management across Oconee County and the greater Athens area:</p>
+                <div className="flex flex-wrap gap-4">
+                  {areaList.map((a) => (
+                    <Link
+                      key={a.href}
+                      href={a.href}
+                      className="inline-flex items-center gap-2 px-7 py-4 rounded-xl border-2 border-[var(--primary-gray)] text-[var(--primary-gray)] font-semibold hover:bg-[var(--primary-gray)] hover:text-white transition-colors"
+                    >
+                      {a.label}, GA
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </article>
           </div>
         </section>

@@ -20,6 +20,14 @@ This document tracks all modifications and improvements made to the GBLM Website
   - `Services.tsx`: added a gold **"Learn More →" link** to each of the 10 service cards pointing to its page (imports `next/link`). No other changes to the Services section.
   - ⚠️ CSS note for future work: this project's global `a{}` / `h1–h4{}` color rules override Tailwind color utilities (Tailwind v4 cascade layers) — use the site's own classes (e.g. `.btn`) or explicit hex for colored text on those elements.
   - **🔂 REVERSAL PROTOCOL**: delete `src/app/services/` and `src/data/services.ts`, and revert the 10 Learn More additions in `Services.tsx` (or `git checkout main`). All changes isolated on branch `seo-phase-d`.
+- **Local SEO — Area / "Areas We Serve" Pages (Phase E local authority, by FPS/Claude)**:
+  - Added **6 hyperlocal town pages** + an **"Areas We Serve" hub**: `/locations` and `/locations/[city]` for Watkinsville, Bogart, Bishop, North High Shoals, Farmington, Athens.
+  - New file `src/data/areas.ts` holds **unique local copy per town** (that town's terrain, property types, common projects, FAQs) — NOT thin/duplicate content.
+  - **Converted `/locations/[city]` from a dynamic route to static (SSG) for our real towns only** (`dynamicParams = false` → any other city 404s). This removes the previous thin/duplicate "doorway page" risk (the old route rendered near-identical content for any city name).
+  - Full interlinking per method: area page → 10 service links + nearby-town links; service pages → area links; `Footer.tsx` → site-wide "Areas We Serve" column + hub link. LocalBusiness + FAQPage schema on each town page.
+  - Styling matches the service pages (split hero, gold offset image, gold cards, homepage-style CTA).
+  - Site page count now ~21 (toward the 30+ indexed-pages target). More towns can be added later — unique content only.
+  - **🔂 REVERSAL PROTOCOL**: delete `src/data/areas.ts` and `src/app/locations/page.tsx`, restore the prior `src/app/locations/[city]/page.tsx` and `Footer.tsx`/service page from Git history (or `git checkout` the prior commit).
 - **Logo Refresh (David-requested, July 15)**:
   - Replaced `public/images/logo-web-v2.png` (header + hero) and `public/images/logo-v2.png` (schema image) with David's newest compass-badge logo. Converted JPG→PNG via `sips`, kept existing filenames so no code changes required. Same style/aspect ratio as prior logo (charcoal + teal-brushstroke background), so site color theme still matches.
   - **🔂 REVERSAL PROTOCOL**: `git checkout main -- public/images/logo-web-v2.png public/images/logo-v2.png` to restore the previous logo from Git history.

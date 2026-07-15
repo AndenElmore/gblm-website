@@ -6,7 +6,7 @@ export default function About() {
       <div className="container">
         <div className="split-layout">
           <div className="about-image">
-            <Image src="/images/97F1EFE5-8372-4B7B-A795-F772C0FCB6BE.jpeg" alt="Ground Breaker Owner on Tractor" width={600} height={500} className="w-full rounded shadow-xl object-cover" />
+            <Image src="/images/logo-web-v2.png" alt="Ground Breaker Land Management logo" width={600} height={500} className="w-full rounded shadow-xl object-cover" unoptimized />
           </div>
           <div className="about-text">
             <h2>Your Local Land Partner</h2>

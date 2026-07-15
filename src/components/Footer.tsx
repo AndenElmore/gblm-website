@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { areaList } from "@/data/areas";
 
 export default function Footer() {
   return (
@@ -34,9 +35,18 @@ export default function Footer() {
             <h4>Quick Links</h4>
             <ul className="footer-links">
               <li><Link href="/">Home</Link></li>
+              <li><Link href="/locations">Areas We Serve</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service">Terms of Service</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>Areas We Serve</h4>
+            <ul className="footer-links">
+              {areaList.map((a) => (
+                <li key={a.href}><Link href={a.href}>{a.label}, GA</Link></li>
+              ))}
             </ul>
           </div>
         </div>
