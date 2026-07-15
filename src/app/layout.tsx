@@ -13,8 +13,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ground Breaker Land Management | Seeding, Grading & Bush Hogging",
-  description: "Ground Breaker Land Management provides expert seeding, grading, bush hogging, driveway creation, and tree cleanup in Bogart, Watkinsville, Athens, and Oconee County.",
+  title: "BEST Land Clearing in Bogart & Athens GA | Ground Breaker Land Management — Forestry Mulching, Grading, Bush Hogging & Stump Grinding Near Me",
+  description: "Ground Breaker Land Management provides professional land clearing, forestry mulching, grading, bush hogging, and stump grinding in Bogart, Watkinsville, Athens, and across Oconee County, GA. Locally owned & fully insured. Call (706) 510-3942 for a free estimate.",
 };
 
 export default function RootLayout({
@@ -34,19 +34,25 @@ export default function RootLayout({
               "@type": "LandscapingService",
               "name": "Ground Breaker Land Management",
               "image": "https://groundbreakerlandmanagement.com/images/logo-v2.png",
-              "description": "Professional land management services including seeding, grading, bush hogging, and site preparation. Serving a 100-mile radius around Athens, GA.",
+              "description": "Professional land clearing, forestry mulching, grading, site prep, bush hogging, and stump grinding serving Bogart, Watkinsville, Athens, and Oconee County, GA. Locally owned and fully insured.",
               "@id": "https://groundbreakerlandmanagement.com",
               "url": "https://groundbreakerlandmanagement.com",
               "telephone": "+1-706-510-3942",
-              "areaServed": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 33.9519,
-                  "longitude": -83.3576
-                },
-                "geoRadius": "160934"
-              },
+              "areaServed": [
+                { "@type": "City", "name": "Bogart, GA" },
+                { "@type": "City", "name": "Watkinsville, GA" },
+                { "@type": "City", "name": "Athens, GA" },
+                { "@type": "AdministrativeArea", "name": "Oconee County, GA" },
+                {
+                  "@type": "GeoCircle",
+                  "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 33.9519,
+                    "longitude": -83.3576
+                  },
+                  "geoRadius": "160934"
+                }
+              ],
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

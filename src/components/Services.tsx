@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services({ title = "Our Services" }: { title?: string }) {
   return (
@@ -44,7 +45,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tractor"></i>
               <h3>Clearing & Demolition</h3>
               <p>Professional lot clearing and small structure removal to prep your site for building or landscaping.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/land-clearing" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -62,7 +66,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-mountain"></i>
               <h3>Grading & Site Prep</h3>
               <p>Expert terrain development and soil leveling for optimal water drainage and construction readiness.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/grading-site-prep" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -80,7 +87,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-road"></i>
               <h3>Driveways & Roads</h3>
               <p>Professional driveway maintenance, grading, and gravel refreshing to ensure durable and safe access to your property.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/driveways-access-roads" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -98,7 +108,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-seedling"></i>
               <h3>Seeding & Tilling</h3>
               <p>Lush lawn establishment and soil preparation through precision tilling and nutrient-rich seeding.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/seeding-tilling" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -116,7 +129,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tractor"></i>
               <h3>Shrub & Bush Removal</h3>
               <p>Complete removal of overgrown shrubs, hedges, and invasive bushes to reclaim your yard and restore your landscape.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/shrub-bush-removal" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -134,7 +150,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tree"></i>
               <h3>Tree & Storm Cleanup</h3>
               <p>Efficient removal of fallen trees, limbs, and debris after storms or for general property safety.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/tree-storm-cleanup" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -152,7 +171,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-gear"></i>
               <h3>Stump Grinding</h3>
               <p>Complete removal of unsightly stumps to clear the way for new landscaping or safe mowing transitions.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/stump-grinding" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -170,7 +192,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-leaf"></i>
               <h3>Spraying Weed Control</h3>
               <p>Professional spraying services to eliminate invasive weeds and fertilize your land for optimal growth and health.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/weed-control" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -188,7 +213,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tractor"></i>
               <h3>Bushhogging Fields & Pastures</h3>
               <p>Efficiently mow down tall grass, thick brush, and saplings to maintain and restore your fields and pastures.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/bush-hogging" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 
@@ -206,7 +234,10 @@ export default function Services({ title = "Our Services" }: { title?: string })
               <i className="fa-solid fa-tractor"></i>
               <h3>Lawn Rolling</h3>
               <p>Smooth out uneven terrain, press down frost heave, and ensure optimal seed-to-soil contact for a flawless, level yard.</p>
-              <a href="#contact" className="btn btn-small">Book Now</a>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="#contact" className="btn btn-small">Book Now</a>
+                <Link href="/services/lawn-rolling" className="text-[var(--accent-gold)] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Learn More <i className="fa-solid fa-arrow-right text-xs"></i></Link>
+              </div>
             </div>
           </div>
 

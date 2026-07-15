@@ -4,6 +4,29 @@ This document tracks all modifications and improvements made to the GBLM Website
 
 ---
 
+### July 15, 2026
+- **Local SEO — On-Page Realign (Phase D, branch `seo-phase-d`, by FPS/Claude)**:
+  - Repositioned the site's primary keyword to **"land clearing" + city** per the local-SEO delivery method (Prof. Arno workflow). All of David's services are unchanged — this only changes what Google reads as the *primary* term. **Services section deliberately untouched.**
+  - `layout.tsx`: rewrote the **title tag** (`BEST Land Clearing in Bogart & Athens GA | Ground Breaker Land Management — Forestry Mulching, Grading, Bush Hogging & Stump Grinding Near Me`) and **meta description** (land-clearing focused, NAP phone, free-estimate CTA).
+  - `layout.tsx`: enriched **LocalBusiness (LandscapingService) JSON-LD** — land-clearing description + expanded `areaServed` to explicit cities (Bogart, Watkinsville, Athens) + Oconee County, retaining the original 100-mi GeoCircle.
+  - `Hero.tsx`: **H1** → "Land Clearing in Oconee County & Athens, GA"; **H2 subhead** → land clearing, forestry mulching, grading, bush hogging + service areas. Word-animation and all styles retained.
+  - `Header.tsx` + `Hero.tsx`: improved logo **alt text** with service + location keywords.
+  - No changes to Services (other than the Learn More links noted below), styles, layout, or components beyond the above.
+- **Local SEO — Service Authority Pages (Phase E, branch `seo-phase-d`, by FPS/Claude)**:
+  - Added **10 dedicated SEO service pages** at `/services/[slug]`, one per service on the homepage (land-clearing, grading-site-prep, driveways-access-roads, seeding-tilling, shrub-bush-removal, tree-storm-cleanup, stump-grinding, weed-control, bush-hogging, lawn-rolling).
+  - New files: `src/data/services.ts` (unique long-form, locally-focused copy + FAQs per service — no thin/duplicate content) and `src/app/services/[slug]/page.tsx` (server-rendered route, SSG via generateStaticParams).
+  - Each page: keyword-optimized H1/title/meta, ~1,200–1,800 words, gold-accented sections, FAQ cards, mid-page CTA (mirrors homepage financing card), **Service + FAQPage JSON-LD schema**, and interlinks to 3 related service pages.
+  - Styling reuses the site's theme (charcoal/gold, hero-v2 split hero with gold offset image shadow) to match the existing premium look.
+  - `Services.tsx`: added a gold **"Learn More →" link** to each of the 10 service cards pointing to its page (imports `next/link`). No other changes to the Services section.
+  - ⚠️ CSS note for future work: this project's global `a{}` / `h1–h4{}` color rules override Tailwind color utilities (Tailwind v4 cascade layers) — use the site's own classes (e.g. `.btn`) or explicit hex for colored text on those elements.
+  - **🔂 REVERSAL PROTOCOL**: delete `src/app/services/` and `src/data/services.ts`, and revert the 10 Learn More additions in `Services.tsx` (or `git checkout main`). All changes isolated on branch `seo-phase-d`.
+- **Logo Refresh (David-requested, July 15)**:
+  - Replaced `public/images/logo-web-v2.png` (header + hero) and `public/images/logo-v2.png` (schema image) with David's newest compass-badge logo. Converted JPG→PNG via `sips`, kept existing filenames so no code changes required. Same style/aspect ratio as prior logo (charcoal + teal-brushstroke background), so site color theme still matches.
+  - **🔂 REVERSAL PROTOCOL**: `git checkout main -- public/images/logo-web-v2.png public/images/logo-v2.png` to restore the previous logo from Git history.
+  - **🔂 REVERSAL PROTOCOL (SEO)**: `git checkout main` (all July-15 changes are isolated on branch `seo-phase-d`, not merged). Or revert the individual strings in `layout.tsx`, `Hero.tsx`, `Header.tsx` to their pre-July-15 values.
+
+---
+
 ### June 30, 2026
 - **Project Showcase Update**:
   - Replaced the main project showcase video in `VideoSection.tsx` with the new Hardscaping Oconee County video.
