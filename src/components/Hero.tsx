@@ -68,7 +68,7 @@ export default function Hero() {
                 </span>
               ))}
             </h1>
-            <h2>Professional land clearing, forestry mulching, grading, and bush hogging for property owners across Bogart, Watkinsville, Athens, and Oconee County.</h2>
+            <h2>Professional land clearing, grading, bush hogging, and stump grinding for property owners across Bogart, Watkinsville, Athens, and Oconee County.</h2>
             <div className="hero-btns !justify-start">
               <a href="#contact" className="btn">Get Your Estimate <i className="fa-solid fa-arrow-right"></i></a>
               <a href="tel:+17065103942" className="btn btn-outline"><i className="fa-solid fa-phone"></i> (706) 510-3942</a>
@@ -83,7 +83,7 @@ export default function Hero() {
           <div className="relative w-full max-w-[500px] aspect-square">
             <Image 
               src="/images/logo-web-v2.png" 
-              alt="Ground Breaker Land Management land clearing and forestry mulching in Oconee County GA"
+              alt="Ground Breaker Land Management land clearing and land management in Oconee County GA"
               fill 
               className="object-contain drop-shadow-2xl"
               priority

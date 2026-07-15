@@ -49,7 +49,7 @@ export default function Header() {
           <a href="/" className="logo" aria-label="Ground Breaker Land Management home">
             <Image
               src="/images/logo-web-v2.png"
-              alt="Ground Breaker Land Management - Land Clearing & Forestry Mulching in Bogart, Athens & Oconee County GA"
+              alt="Ground Breaker Land Management - Land Clearing & Land Management in Bogart, Athens & Oconee County GA"
               width={400}
               height={300}
               className="h-full w-auto"

@@ -13,8 +13,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BEST Land Clearing in Bogart & Athens GA | Ground Breaker Land Management — Forestry Mulching, Grading, Bush Hogging & Stump Grinding Near Me",
-  description: "Ground Breaker Land Management provides professional land clearing, forestry mulching, grading, bush hogging, and stump grinding in Bogart, Watkinsville, Athens, and across Oconee County, GA. Locally owned & fully insured. Call (706) 510-3942 for a free estimate.",
+  title: "BEST Land Clearing in Bogart & Athens GA | Ground Breaker Land Management — Grading, Bush Hogging, Stump Grinding & Site Prep Near Me",
+  description: "Ground Breaker Land Management provides professional land clearing, grading, bush hogging, stump grinding, and site prep in Bogart, Watkinsville, Athens, and across Oconee County, GA. Locally owned & fully insured. Call (706) 510-3942 for a free estimate.",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
               "@type": "LandscapingService",
               "name": "Ground Breaker Land Management",
               "image": "https://groundbreakerlandmanagement.com/images/logo-v2.png",
-              "description": "Professional land clearing, forestry mulching, grading, site prep, bush hogging, and stump grinding serving Bogart, Watkinsville, Athens, and Oconee County, GA. Locally owned and fully insured.",
+              "description": "Professional land clearing, grading, site prep, bush hogging, and stump grinding serving Bogart, Watkinsville, Athens, and Oconee County, GA. Locally owned and fully insured.",
               "@id": "https://groundbreakerlandmanagement.com",
               "url": "https://groundbreakerlandmanagement.com",
               "telephone": "+1-706-510-3942",
